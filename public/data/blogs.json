@@ -1,0 +1,13 @@
+{
+	"title": "Our Blog",
+	"posts": [
+		{
+			"title": "The Importance of Legal Counsel",
+			"excerpt": "Legal representation is vital for ensuring your rights are protected."
+		},
+		{
+			"title": "Understanding Criminal Law",
+			"excerpt": "Criminal law governs the conduct that society deems to be criminal."
+		}
+	]
+}

@@ -1,0 +1,28 @@
+/* Practice Areas Page Styles */
+.practice-areas {
+	padding: 2rem;
+}
+
+.practice-areas h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.practice-areas ul {
+	list-style: none;
+	padding: 0;
+}
+
+.practice-areas li {
+	border-bottom: 1px solid #ddd;
+	padding: 1rem 0;
+}
+
+.practice-areas h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.practice-areas p {
+	font-size: 1rem;
+}

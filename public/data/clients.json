@@ -1,0 +1,19 @@
+{
+	"clients": [
+		{
+			"name": "ABC Corp",
+			"logo": "https://picsum.photos/100/100",
+			"description": "Legal advisory for corporate restructuring."
+		},
+		{
+			"name": "XYZ Ltd",
+			"logo": "https://picsum.photos/100/100",
+			"description": "Handled litigation and dispute resolution."
+		},
+		{
+			"name": "PQR Enterprises",
+			"logo": "https://picsum.photos/100/100",
+			"description": "Provided intellectual property consultation."
+		}
+	]
+}
