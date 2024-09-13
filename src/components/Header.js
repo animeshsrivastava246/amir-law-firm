@@ -7,14 +7,21 @@ const Header = () => {
 		<header className="relative w-full">
 			{/* Fixed TopBar */}
 			<TopBar />
+			{/* Main Navigation */}
 			<nav className="bg-gray-900 p-6 shadow-md">
 				<div className="container mx-auto flex justify-between items-center">
-					<Link to="/" className="text-white text-3xl font-bold">
-						{/* Amir Law Firm */}
+					<Link
+						to="/"
+						className="text-white text-3xl font-bold flex items-center"
+					>
+						{/* Logo */}
 						<LawLogo
-							style={{ fill: "white", height: "70px", width: "50px" }}
+							style={{ fill: "white", height: "50px", width: "50px" }}
+							className="mr-2"
 						/>
+						<span>Amir Law Firm</span>
 					</Link>
+					{/* Navigation Links */}
 					<div className="flex space-x-6">
 						<Link to="/" className="text-gray-300 hover:text-yellow-500">
 							Home
@@ -40,4 +47,5 @@ const Header = () => {
 		</header>
 	);
 };
+
 export default Header;

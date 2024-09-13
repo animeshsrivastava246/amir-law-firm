@@ -29,40 +29,44 @@ const AppointmentForm = () => {
 				className="max-w-lg mx-auto space-y-6 bg-white p-8 shadow-md rounded-lg"
 			>
 				<div>
-					<label className="block text-gray-700">Name</label>
+					<label className="block text-gray-700 mb-2">Name</label>
 					<input
 						type="text"
 						name="name"
 						value={formData.name}
 						onChange={handleChange}
-						className="w-full border p-3 rounded"
+						className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-yellow-500"
+						placeholder="Enter your name"
 						required
 					/>
 				</div>
 				<div>
-					<label className="block text-gray-700">Email</label>
+					<label className="block text-gray-700 mb-2">Email</label>
 					<input
 						type="email"
 						name="email"
 						value={formData.email}
 						onChange={handleChange}
-						className="w-full border p-3 rounded"
+						className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-yellow-500"
+						placeholder="Enter your email"
 						required
 					/>
 				</div>
 				<div>
-					<label className="block text-gray-700">Message</label>
+					<label className="block text-gray-700 mb-2">Message</label>
 					<textarea
 						name="message"
 						value={formData.message}
 						onChange={handleChange}
-						className="w-full border p-3 rounded"
+						className="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-yellow-500"
+						placeholder="Enter your message"
+						rows="4"
 						required
 					></textarea>
 				</div>
 				<button
 					type="submit"
-					className="w-full bg-yellow-500 text-white py-3 rounded hover:bg-yellow-600"
+					className="w-full bg-yellow-500 text-white py-3 rounded hover:bg-yellow-600 transition-colors"
 				>
 					Submit
 				</button>

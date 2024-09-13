@@ -7,19 +7,19 @@ import Testimony from "./Testimony";
 const Home = () => {
 	return (
 		<main>
-			{/* Hero Section with Carousel */}
+			{/* Hero Section with Swiper Carousel */}
 			<section className="relative bg-gray-100 overflow-hidden">
 				<Swiper
 					spaceBetween={0}
 					slidesPerView={1}
 					loop={true}
-					autoplay={{ delay: 500 }}
+					autoplay={{ delay: 5000 }}
 					className="w-full h-[450px] relative"
 				>
 					<SwiperSlide>
 						<img
 							src={require("../assets/banner-law1.png")}
-							alt="Law Banner 1"
+							alt="Expert Legal Services"
 							className="w-full h-full object-cover"
 						/>
 						<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
@@ -29,7 +29,7 @@ const Home = () => {
 					<SwiperSlide>
 						<img
 							src={require("../assets/banner-law2.png")}
-							alt="Law Banner 2"
+							alt="Client-Focused Solutions"
 							className="w-full h-full object-cover"
 						/>
 						<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
@@ -39,7 +39,7 @@ const Home = () => {
 					<SwiperSlide>
 						<img
 							src={require("../assets/banner-law3.png")}
-							alt="Law Banner 3"
+							alt="Your Legal Partner"
 							className="w-full h-full object-cover"
 						/>
 						<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
