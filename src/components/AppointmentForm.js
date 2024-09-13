@@ -1,79 +1,73 @@
 import React, { useState } from "react";
-import "../styles/AppointmentForm.css"; // Import specific styles for AppointmentForm
 
 const AppointmentForm = () => {
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
-		phone: "",
 		message: "",
 	});
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
-		setFormData({
-			...formData,
-			[name]: value,
-		});
+		setFormData({ ...formData, [name]: value });
 	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// Handle form submission (e.g., send to an API or email)
-		console.log("Appointment Request:", formData);
-		// Reset form after submission
-		setFormData({
-			name: "",
-			email: "",
-			phone: "",
-			message: "",
-		});
+		const { name, email, message } = formData;
+		const mailtoLink = `mailto:example@lawfirm.com?subject=Appointment Request&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+		window.location.href = mailtoLink;
 	};
 
 	return (
-		<section className="appointment-form">
-			<h2>Book an Appointment</h2>
-			<form onSubmit={handleSubmit}>
-				<label htmlFor="name">Name:</label>
-				<input
-					type="text"
-					id="name"
-					name="name"
-					value={formData.name}
-					onChange={handleChange}
-					required
-				/>
-
-				<label htmlFor="email">Email:</label>
-				<input
-					type="email"
-					id="email"
-					name="email"
-					value={formData.email}
-					onChange={handleChange}
-					required
-				/>
-
-				<label htmlFor="phone">Phone:</label>
-				<input
-					type="tel"
-					id="phone"
-					name="phone"
-					value={formData.phone}
-					onChange={handleChange}
-				/>
-
-				<label htmlFor="message">Message:</label>
-				<textarea
-					id="message"
-					name="message"
-					value={formData.message}
-					onChange={handleChange}
-				></textarea>
-
-				<button type="submit">Submit</button>
+		<div className="container mx-auto py-16">
+			<h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
+				Make an Appointment
+			</h2>
+			<form
+				onSubmit={handleSubmit}
+				className="max-w-lg mx-auto space-y-6 bg-white p-8 shadow-md rounded-lg"
+			>
+				<div>
+					<label className="block text-gray-700">Name</label>
+					<input
+						type="text"
+						name="name"
+						value={formData.name}
+						onChange={handleChange}
+						className="w-full border p-3 rounded"
+						required
+					/>
+				</div>
+				<div>
+					<label className="block text-gray-700">Email</label>
+					<input
+						type="email"
+						name="email"
+						value={formData.email}
+						onChange={handleChange}
+						className="w-full border p-3 rounded"
+						required
+					/>
+				</div>
+				<div>
+					<label className="block text-gray-700">Message</label>
+					<textarea
+						name="message"
+						value={formData.message}
+						onChange={handleChange}
+						className="w-full border p-3 rounded"
+						required
+					></textarea>
+				</div>
+				<button
+					type="submit"
+					className="w-full bg-yellow-500 text-white py-3 rounded hover:bg-yellow-600"
+				>
+					Submit
+				</button>
 			</form>
-		</section>
+		</div>
 	);
 };
 

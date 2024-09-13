@@ -1,32 +1,43 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Header.css"; // Import specific styles for Header
+import { ReactComponent as LawLogo } from "../assets/law-logo.svg";
+import TopBar from "./TopBar";
 
 const Header = () => {
 	return (
-		<header>
-			<h1>Amir Law Firm</h1>
-			<nav>
-				<ul>
-					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/about">About Us</Link>
-					</li>
-					<li>
-						<Link to="/practice-areas">Practice Areas</Link>
-					</li>
-					<li>
-						<Link to="/blogs">Blogs</Link>
-					</li>
-					<li>
-						<Link to="/contact">Contact Us</Link>
-					</li>
-				</ul>
+		<header className="relative w-full">
+			{/* Fixed TopBar */}
+			<TopBar />
+			<nav className="bg-gray-900 p-6 shadow-md">
+				<div className="container mx-auto flex justify-between items-center">
+					<Link to="/" className="text-white text-3xl font-bold">
+						{/* Amir Law Firm */}
+						<LawLogo
+							style={{ fill: "white", height: "70px", width: "50px" }}
+						/>
+					</Link>
+					<div className="flex space-x-6">
+						<Link to="/" className="text-gray-300 hover:text-yellow-500">
+							Home
+						</Link>
+						<Link to="/about" className="text-gray-300 hover:text-yellow-500">
+							About Us
+						</Link>
+						<Link
+							to="/practice-areas"
+							className="text-gray-300 hover:text-yellow-500"
+						>
+							Practice Areas
+						</Link>
+						<Link to="/blogs" className="text-gray-300 hover:text-yellow-500">
+							Blogs
+						</Link>
+						<Link to="/contact" className="text-gray-300 hover:text-yellow-500">
+							Contact Us
+						</Link>
+					</div>
+				</div>
 			</nav>
 		</header>
 	);
 };
-
 export default Header;

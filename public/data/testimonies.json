@@ -1,0 +1,38 @@
+[
+	{
+		"name": "John Doe",
+		"text": "This firm provided exceptional service. Highly recommended!"
+	},
+	{
+		"name": "Jane Smith",
+		"text": "Professional and efficient. The legal advice was top-notch."
+	},
+	{
+		"name": "Mike Johnson",
+		"text": "Very satisfied with the service. The team is very knowledgeable."
+	},
+	{
+		"name": "Emily Davis",
+		"text": "Great experience from start to finish. Would definitely use them again."
+	},
+	{
+		"name": "Robert Wilson",
+		"text": "They handled my case with care and precision. Excellent service!"
+	},
+	{
+		"name": "Olivia Brown",
+		"text": "Impressive legal expertise. I felt supported throughout the process."
+	},
+	{
+		"name": "David Lee",
+		"text": "Outstanding professionalism and care. Highly recommend this firm."
+	},
+	{
+		"name": "Sophia Martinez",
+		"text": "Top-quality legal services. The team is dedicated and reliable."
+	},
+	{
+		"name": "James Anderson",
+		"text": "Very pleased with the outcome. They exceeded my expectations."
+	}
+]

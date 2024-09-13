@@ -1,21 +1,15 @@
-import React, { useEffect, useState } from "react";
-// import "./styles/AboutUs.css"; // Import specific styles for AboutUs
-import "../styles/AboutUs.css"
+import React from "react";
 
 const AboutUs = () => {
-	const [aboutData, setAboutData] = useState({});
-
-	useEffect(() => {
-		fetch("/data/about.json")
-			.then((response) => response.json())
-			.then((data) => setAboutData(data));
-	}, []);
-
 	return (
 		<main>
 			<section className="about-us">
-				<h2>{aboutData.title}</h2>
-				<p>{aboutData.content}</p>
+				<h2>About Us</h2>
+				<p>
+					We are a small law firm specializing in multiple practice areas. Our
+					mission is to provide top-notch legal services with a personalized
+					approach.
+				</p>
 			</section>
 		</main>
 	);

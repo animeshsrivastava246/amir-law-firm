@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../styles/PracticeAreas.css"; // Import specific styles for PracticeAreas
 
 const PracticeAreas = () => {
 	const [practiceAreas, setPracticeAreas] = useState([]);
