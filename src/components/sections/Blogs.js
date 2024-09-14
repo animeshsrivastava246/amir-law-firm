@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
+import blogsData from "../../data/blogs.json";
 
 const Blogs = () => {
 	const [blogs, setBlogs] = useState([]);
 
 	useEffect(() => {
-		fetch("/data/blogs.json")
-			.then((response) => response.json())
-			.then((data) => setBlogs(data.posts));
+		setBlogs(blogsData);
 	}, []);
 
 	return (

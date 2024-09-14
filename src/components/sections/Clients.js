@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
+import clientsData from "../../data/clients.json";
 
 const Clients = () => {
 	const [clients, setClients] = useState([]);
 
 	useEffect(() => {
-		fetch("/data/clients.json")
-			.then((response) => response.json())
-			.then((data) => setClients(data.clients));
+		setClients(clientsData);
 	}, []);
 
 	return (
@@ -22,7 +21,7 @@ const Clients = () => {
 							className="p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
 						>
 							<img
-								src={require(`../assets/client${index + 1}.png`)}
+								src={require(`../../assets/clients/${client.client_img}`)}
 								alt={client.name}
 								className="w-full h-32 object-contain mb-4"
 							/>

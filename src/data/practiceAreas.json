@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Corporate Law",
+        "description": "Business formation, mergers, acquisitions, and compliance."
+    },
+    {
+        "name": "Personal Injury Law",
+        "description": "Compensation for injuries due to negligence or accidents."
+    },
+    {
+        "name": "Immigration Law",
+        "description": "Visa applications, residency, and citizenship processes."
+    },
+    {
+        "name": "Employment Law",
+        "description": "Workplace disputes, wrongful termination, and labor rights."
+    },
+    {
+        "name": "Intellectual Property Law",
+        "description": "Trademarks, patents, and copyright protection."
+    },
+    {
+        "name": "Tax Law",
+        "description": "Tax planning, compliance, and dispute resolution."
+    },
+    {
+        "name": "Estate Planning",
+        "description": "Wills, trusts, and asset distribution."
+    },
+    {
+        "name": "Contract Law",
+        "description": "Drafting, reviewing, and enforcing legal agreements."
+    },
+    {
+        "name": "Bankruptcy Law",
+        "description": "Debt relief, bankruptcy filings, and restructuring."
+    },
+    {
+        "name": "Healthcare Law",
+        "description": "Medical malpractice, patient rights, and regulatory compliance."
+    }
+]

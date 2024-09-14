@@ -1,51 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/autoplay";
 import Clients from "./Clients";
 import Testimony from "./Testimony";
+import CarouselData from "../../data/carousel.json";
 
 const Home = () => {
+	const [carousels, setCarousels] = useState([]);
+
+	useEffect(() => {
+		setCarousels(CarouselData);
+	}, []);
 	return (
 		<main>
 			{/* Hero Section with Swiper Carousel */}
 			<section className="relative bg-gray-100 overflow-hidden">
 				<Swiper
+					modules={[Autoplay]}
 					spaceBetween={0}
 					slidesPerView={1}
 					loop={true}
 					autoplay={{ delay: 5000 }}
 					className="w-full h-[450px] relative"
 				>
-					<SwiperSlide>
-						<img
-							src={require("../assets/banner-law1.png")}
-							alt="Expert Legal Services"
-							className="w-full h-full object-cover"
-						/>
-						<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
-							<p className="text-xl font-semibold">Expert Legal Services</p>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<img
-							src={require("../assets/banner-law2.png")}
-							alt="Client-Focused Solutions"
-							className="w-full h-full object-cover"
-						/>
-						<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
-							<p className="text-xl font-semibold">Client-Focused Solutions</p>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide>
-						<img
-							src={require("../assets/banner-law3.png")}
-							alt="Your Legal Partner"
-							className="w-full h-full object-cover"
-						/>
-						<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
-							<p className="text-xl font-semibold">Your Legal Partner</p>
-						</div>
-					</SwiperSlide>
+					{carousels.map((carousel, index) => (
+						<SwiperSlide key={index}>
+							<img
+								src={require(`../../assets/banners/${carousel.banner}`)}
+								alt={`${carousel.description}`}
+								className="w-full h-full object-cover"
+							/>
+							<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
+								<p className="text-xl font-semibold">{`${carousel.description}`}</p>
+							</div>
+						</SwiperSlide>
+					))}
 				</Swiper>
 			</section>
 
@@ -56,8 +47,13 @@ const Home = () => {
 						Our Mission
 					</h2>
 					<p className="text-lg text-gray-600 max-w-2xl mx-auto">
-						We are dedicated to offering the best legal services with a focus on
-						client satisfaction and providing expert legal solutions.
+						We are unwavering in our commitment to delivering exceptional legal
+						services, with a primary focus on client satisfaction. Our approach
+						blends deep legal expertise with a personalized touch, ensuring that
+						each client receives tailored, strategic solutions that meet their
+						unique needs. We pride ourselves on providing expert guidance across
+						a wide range of legal matters, with a steadfast dedication to
+						achieving the most favorable outcomes for our clients.
 					</p>
 				</div>
 			</section>

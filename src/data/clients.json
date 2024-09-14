@@ -1,0 +1,22 @@
+[
+	{
+		"name": "ABC Corp",
+		"description": "Legal advisory for corporate restructuring.",
+		"client_img": "abc_corp.png"
+	},
+	{
+		"name": "XYZ Ltd",
+		"description": "Handled litigation and dispute resolution.",
+		"client_img": "xyz_ltd.png"
+	},
+	{
+		"name": "PQR Enterprises",
+		"description": "Provided intellectual property consultation.",
+		"client_img": "pqr_enterprises.png"
+	},
+	{
+		"name": "Shelby Company",
+		"description": "Provided intellectual property consultation.",
+		"client_img": "shelby_company.png"
+	}
+]

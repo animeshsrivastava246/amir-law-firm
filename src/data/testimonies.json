@@ -1,0 +1,47 @@
+[
+    {
+        "name": "John Doe",
+        "text": "This firm provided exceptional service. Highly recommended!",
+        "avatar": "john_doe.png"
+    },
+    {
+        "name": "Jane Smith",
+        "text": "Professional and efficient. The legal advice was top-notch.",
+        "avatar": "jane_smith.png"
+    },
+    {
+        "name": "Mike Johnson",
+        "text": "Very satisfied with the service. The team is very knowledgeable.",
+        "avatar": "mike_johnson.png"
+    },
+    {
+        "name": "Emily Davis",
+        "text": "Great experience from start to finish. Would definitely use them again.",
+        "avatar": "emily_davis.png"
+    },
+    {
+        "name": "Robert Wilson",
+        "text": "They handled my case with care and precision. Excellent service!",
+        "avatar": "robert_wilson.png"
+    },
+    {
+        "name": "Olivia Brown",
+        "text": "Impressive legal expertise. I felt supported throughout the process.",
+        "avatar": "olivia_brown.png"
+    },
+    {
+        "name": "David Lee",
+        "text": "Outstanding professionalism and care. Highly recommend this firm.",
+        "avatar": "david_lee.png"
+    },
+    {
+        "name": "Sophia Martinez",
+        "text": "Top-quality legal services. The team is dedicated and reliable.",
+        "avatar": "sophia_martinez.png"
+    },
+    {
+        "name": "James Anderson",
+        "text": "Very pleased with the outcome. They exceeded my expectations.",
+        "avatar": "james_anderson.png"
+    }
+]

@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
+import testimoniesData from "../../data/testimonies.json";
 
 const Testimony = () => {
 	const [testimonies, setTestimonies] = useState([]);
 
 	useEffect(() => {
-		fetch("/data/testimonies.json")
-			.then((response) => response.json())
-			.then((data) => setTestimonies(data));
+		setTestimonies(testimoniesData);
 	}, []);
 
 	return (
@@ -22,14 +21,18 @@ const Testimony = () => {
 							className="testimonial shadow-md rounded-lg bg-white p-6 flex flex-col items-center"
 						>
 							<p className="text-lg text-gray-600 text-center mb-4">
-								{`${testimony.text}`}
+								{testimony.text}
 							</p>
 							<div className="flex items-center justify-center">
-								<p className="font-semibold text-gray-800 mr-2">{`— ${testimony.name}`}</p>
+								<p className="font-semibold text-gray-800 mr-2">
+									— {testimony.name}
+								</p>
 								<img
 									className="w-10 h-10 rounded-full object-cover"
-									src={testimony.avatar || "/default_avatar.png"} // Add a default image placeholder
-									alt={`${testimony.name} Avatar`}
+									src={require(`../../assets/avatars/${
+										testimony.avatar ? testimony.avatar : "default_avatar.png"
+									}`)}
+									alt={`${testimony.name}'s Avatar`}
 								/>
 							</div>
 						</article>
