@@ -21,16 +21,11 @@ const Header = () => {
 				<nav className="bg-gray-900 p-6 shadow-md">
 					<div className="container mx-auto flex justify-between items-center">
 						{/* Logo */}
-						<Link
-							to="/"
-							className="text-white text-3xl font-bold flex items-center"
-						>
+						<Link to="/" className="flex items-center">
 							<LawLogo
-								style={{ fill: "white", height: "50px", width: "50px" }} // Increased size for better readability
+								style={{ fill: "white", height: "80px", width: "120px" }} // Increased size for better visibility
 								className="mr-2"
 							/>
-							<span className="text-xl">Amir Law Firm</span>{" "}
-							{/* Adjusted text size */}
 						</Link>
 
 						{/* Hamburger Menu for small screens */}

@@ -1,5 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ReactComponent as LawLogo } from "../../assets/logos/law-logo.svg";
+import {
+	FaPhone,
+	FaFacebookF,
+	FaInstagram,
+	FaLinkedinIn,
+	FaEnvelope,
+	FaTwitter,
+} from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -7,7 +16,18 @@ const Footer = () => {
 			<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 				{/* Company Info Section */}
 				<div>
-					<h3 className="text-xl font-semibold mb-4">Amir Law Firm</h3>
+					<h3>
+						{/* Logo */}
+						<Link
+							to="/"
+							className="text-xl font-semibold mb-4 flex items-center"
+						>
+							<LawLogo
+								style={{ fill: "white", height: "80px", width: "120px" }} // Increased size for better visibility
+								className="mr-2"
+							/>
+						</Link>
+					</h3>
 					<p className="text-gray-400">
 						We offer expert legal services with a client-focused approach.
 					</p>
@@ -64,52 +84,50 @@ const Footer = () => {
 				{/* Social Media & Contact Section */}
 				<div>
 					<h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-					<ul className="flex space-x-4">
-						<li>
-							<a
-								href="https://facebook.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-yellow-500"
-							>
-								Facebook
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://twitter.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-yellow-500"
-							>
-								Twitter
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://linkedin.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-yellow-500"
-							>
-								LinkedIn
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://instagram.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-gray-400 hover:text-yellow-500"
-							>
-								Instagram
-							</a>
-						</li>
-					</ul>
+					<div className="flex space-x-4 mb-6">
+						<a
+							href="https://facebook.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-400 hover:text-yellow-500"
+						>
+							<FaFacebookF size={24} />
+						</a>
+						<a
+							href="https://twitter.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-400 hover:text-yellow-500"
+						>
+							<FaTwitter size={24} />
+						</a>
+						<a
+							href="https://linkedin.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-400 hover:text-yellow-500"
+						>
+							<FaLinkedinIn size={24} />
+						</a>
+						<a
+							href="https://instagram.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-400 hover:text-yellow-500"
+						>
+							<FaInstagram size={24} />
+						</a>
+					</div>
 
-					<h3 className="text-xl font-semibold mt-6 mb-4">Contact Us</h3>
-					<p className="text-gray-400">Email: info@lawfirm.com</p>
-					<p className="text-gray-400">Phone: +91 98765 43210</p>
+					<h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+					<p className="text-gray-400 flex items-center">
+						<FaEnvelope className="mr-2" />
+						Email: info@lawfirm.com
+					</p>
+					<p className="text-gray-400 flex items-center">
+						<FaPhone className="mr-2" />
+						Phone: +91 98765 43210
+					</p>
 				</div>
 			</div>
 		</footer>
