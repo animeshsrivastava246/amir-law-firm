@@ -54,24 +54,24 @@ const Header = () => {
 
 						{/* Navigation Links for large screens */}
 						<div className="hidden md:flex space-x-6 text-lg">
-							<Link to="/" className="text-gray-300 hover:text-yellow-500">
+							<Link to="/" className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300">
 								Home
 							</Link>
-							<Link to="/about" className="text-gray-300 hover:text-yellow-500">
+							<Link to="/about" className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300">
 								About Us
 							</Link>
 							<Link
 								to="/practice-areas"
-								className="text-gray-300 hover:text-yellow-500"
+								className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300"
 							>
 								Practice Areas
 							</Link>
-							<Link to="/blogs" className="text-gray-300 hover:text-yellow-500">
+							<Link to="/blogs" className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300">
 								Blogs
 							</Link>
 							<Link
 								to="/contact"
-								className="text-gray-300 hover:text-yellow-500"
+								className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300"
 							>
 								Contact Us
 							</Link>

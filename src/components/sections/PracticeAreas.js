@@ -9,7 +9,12 @@ const PracticeAreas = () => {
 	}, []);
 
 	return (
-		<main>
+		<main
+			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			style={{
+				backgroundImage: `url(${require("../../assets/logos/clients-logo.png")})`,
+			}}
+		>
 			<section className="practice-areas grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
 				{practiceAreas.map((area) => (
 					<article

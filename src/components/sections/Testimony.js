@@ -9,7 +9,11 @@ const Testimony = () => {
 	}, []);
 
 	return (
-		<section className="testimonials bg-white py-16">
+		<section className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+		style={{
+			backgroundImage: `url(${require("../../assets/backdrops/banner-law.png")})`,
+		}}
+	>
 			<div className="container mx-auto px-4">
 				<h2 className="text-4xl font-semibold text-center text-gray-800 mb-8">
 					What Our Clients Say

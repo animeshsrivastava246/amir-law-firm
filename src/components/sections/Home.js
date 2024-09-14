@@ -18,7 +18,7 @@ const Home = () => {
 	return (
 		<main>
 			{/* Hero Section with Swiper Carousel */}
-			<section className="relative bg-gray-100 overflow-hidden">
+			<section className="relative pb-20 bg-gray-100 overflow-hidden">
 				<Swiper
 					modules={[Autoplay, Navigation]}
 					spaceBetween={0}
@@ -44,18 +44,25 @@ const Home = () => {
 						</SwiperSlide>
 					))}
 					{/* Navigation Buttons */}
-					<div className="swiper-button-prev" />
-					<div className="swiper-button-next" />
+					<div className="swiper-button-prev !text-white !bg-gray-800 !bg-opacity-50 p-10 rounded-full" />
+					<div className="swiper-button-next !text-white !bg-gray-800 !bg-opacity-50 p-10 rounded-full" />
 				</Swiper>
 			</section>
 
 			{/* Mission Section */}
-			<section className="py-16 bg-gray-50">
-				<div className="container mx-auto text-center">
-					<h2 className="text-4xl font-semibold text-gray-800 mb-4">
+			<section
+				className="relative py-20 bg-gray-50 bg-fixed bg-cover bg-center"
+				style={{
+					backgroundImage: `url(${require("../../assets/banners/tls.png")})`,
+				}}
+			>
+				{/* Adding a dark overlay for better text readability */}
+				<div className="absolute inset-0 bg-black bg-opacity-50"></div>
+				<div className="relative container mx-auto text-center">
+					<h2 className="text-4xl font-semibold text-white mb-4">
 						Our Mission
 					</h2>
-					<p className="text-lg text-gray-600 max-w-2xl mx-auto">
+					<p className="text-lg text-gray-100 max-w-2xl mx-auto">
 						We are unwavering in our commitment to delivering exceptional legal
 						services, with a primary focus on client satisfaction. Our approach
 						blends deep legal expertise with a personalized touch, ensuring that
@@ -67,11 +74,16 @@ const Home = () => {
 				</div>
 			</section>
 
-			{/* Clients Section */}
-			<Clients />
+			{/* Adding margin between sections for a subtle break */}
+			<section className="my-16">
+				{/* Clients Section */}
+				<Clients />
+			</section>
 
-			{/* Testimony Section */}
-			<Testimony />
+			<section className="my-16">
+				{/* Testimony Section */}
+				<Testimony />
+			</section>
 
 			{/* Google Map Embed */}
 			<section className="my-12">

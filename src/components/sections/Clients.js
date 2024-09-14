@@ -9,7 +9,12 @@ const Clients = () => {
 	}, []);
 
 	return (
-		<section className="py-16 bg-white">
+		<section
+			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			style={{
+				backgroundImage: `url(${require("../../assets/logos/clients-logo.png")})`,
+			}}
+		>
 			<div className="container mx-auto text-center">
 				<h2 className="text-4xl font-semibold text-gray-800 mb-12">
 					Clients We Deal With

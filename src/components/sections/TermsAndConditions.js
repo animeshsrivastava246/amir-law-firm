@@ -2,7 +2,12 @@ import React from "react";
 
 const TermsAndConditions = () => {
 	return (
-		<main className="py-16 bg-gray-50">
+		<main
+			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			style={{
+				backgroundImage: `url(${require("../../assets/logos/clients-logo.png")})`,
+			}}
+		>
 			<section className="container mx-auto text-center">
 				<h2 className="text-4xl font-semibold text-gray-800 mb-6">
 					Terms And Conditions

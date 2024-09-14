@@ -16,7 +16,7 @@ const TopBar = () => {
 					{/* Phone */}
 					<a
 						href="tel:+1234567890"
-						className="hidden sm:block hover:text-yellow-500"
+						className="hidden sm:block bg-yellow-500 hover:bg-yellow-600 px-3 py-1 rounded-full transition duration-300"
 					>
 						Call Us: +1234567890
 					</a>
@@ -30,7 +30,7 @@ const TopBar = () => {
 					{/* WhatsApp */}
 					<a
 						href="https://wa.me/1234567890"
-						className="hidden sm:block hover:text-yellow-500"
+						className="hidden sm:block bg-yellow-500 hover:bg-yellow-600 px-3 py-1 rounded-full transition duration-300"
 					>
 						WhatsApp
 					</a>
@@ -44,7 +44,7 @@ const TopBar = () => {
 					{/* Facebook */}
 					<a
 						href="https://facebook.com"
-						className="hidden sm:block hover:text-yellow-500"
+						className="hidden sm:block bg-yellow-500 hover:bg-yellow-600 px-3 py-1 rounded-full transition duration-300"
 					>
 						Facebook
 					</a>
@@ -58,7 +58,7 @@ const TopBar = () => {
 					{/* Email */}
 					<a
 						href="mailto:info@amirlawfirm.com"
-						className="hidden sm:block hover:text-yellow-500"
+						className="hidden sm:block bg-yellow-500 hover:bg-yellow-600 px-3 py-1 rounded-full transition duration-300"
 					>
 						Email Us
 					</a>
@@ -72,7 +72,7 @@ const TopBar = () => {
 					{/* Make an Appointment */}
 					<Link
 						to="/appointment"
-						className="hidden sm:block  hover:text-yellow-500"
+						className="hidden sm:block bg-yellow-500 hover:bg-yellow-600 px-3 py-1 rounded-full transition duration-300"
 					>
 						Make an Appointment
 					</Link>

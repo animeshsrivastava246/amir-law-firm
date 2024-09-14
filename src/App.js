@@ -8,7 +8,7 @@ import PracticeAreas from "./components/sections/PracticeAreas";
 import Blogs from "./components/sections/Blogs";
 import ContactUs from "./components/sections/ContactUs";
 import PrivacyPolicy from "./components/sections/PrivacyPolicy";
-import TermsAndConditions from "./components/sections/TermsAndConsitions";
+import TermsAndConditions from "./components/sections/TermsAndConditions";
 import Careers from "./components/sections/Careers";
 
 const App = () => {

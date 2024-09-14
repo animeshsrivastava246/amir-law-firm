@@ -3,7 +3,12 @@ import AppointmentForm from "../forms/AppointmentForm";
 
 const ContactUs = () => {
 	return (
-		<main className="py-16 bg-gray-50">
+		<main
+			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			style={{
+				backgroundImage: `url(${require("../../assets/logos/clients-logo.png")})`,
+			}}
+		>
 			<section className="container mx-auto text-center mb-12">
 				<h2 className="text-4xl font-semibold text-gray-800 mb-6">
 					Contact Us
