@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
 	return (
-		<footer className="w-full bg-gray-800 text-white py-8 flex flex-col items-center mt-auto">
+		<footer className="w-full bg-gray-800 text-white p-8 flex flex-col items-center mt-auto">
 			<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
 				{/* Company Info Section */}
 				<div>
@@ -26,6 +26,7 @@ const Footer = () => {
 								style={{ fill: "white", height: "80px", width: "120px" }} // Increased size for better visibility
 								className="mr-2"
 							/>
+							Amir Law Firm
 						</Link>
 					</h3>
 					<p className="text-gray-400">

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/navigation";
 import Clients from "./Clients";
 import Testimony from "./Testimony";
 import CarouselData from "../../data/carousel.json";
@@ -13,16 +14,21 @@ const Home = () => {
 	useEffect(() => {
 		setCarousels(CarouselData);
 	}, []);
+
 	return (
 		<main>
 			{/* Hero Section with Swiper Carousel */}
 			<section className="relative bg-gray-100 overflow-hidden">
 				<Swiper
-					modules={[Autoplay]}
+					modules={[Autoplay, Navigation]}
 					spaceBetween={0}
 					slidesPerView={1}
 					loop={true}
-					autoplay={{ delay: 5000 }}
+					autoplay={{ delay: 2000 }} // Adjusted delay for better user experience
+					navigation={{
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					}}
 					className="w-full h-[450px] relative"
 				>
 					{carousels.map((carousel, index) => (
@@ -30,13 +36,16 @@ const Home = () => {
 							<img
 								src={require(`../../assets/banners/${carousel.banner}`)}
 								alt={`${carousel.description}`}
-								className="w-full h-full object-cover"
+								className="w-full h-full object-fill"
 							/>
 							<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
 								<p className="text-xl font-semibold">{`${carousel.description}`}</p>
 							</div>
 						</SwiperSlide>
 					))}
+					{/* Navigation Buttons */}
+					<div className="swiper-button-prev" />
+					<div className="swiper-button-next" />
 				</Swiper>
 			</section>
 

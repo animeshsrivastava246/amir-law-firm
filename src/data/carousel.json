@@ -1,14 +1,42 @@
 [
 	{
-		"description": "Expert Legal Services",
-		"banner": "els.png"
+		"description": "Comprehensive Legal Advice",
+		"banner": "cla.png"
 	},
 	{
-		"description": "Client Focused Solutions",
-		"banner": "cfs.png"
+		"description": "Tailored Legal Strategies",
+		"banner": "tls.png"
 	},
 	{
-		"description": "Your Legal Partner",
-		"banner": "yfp.png"
-    }
+		"description": "Trusted Legal Representation",
+		"banner": "tlr.png"
+	},
+	{
+		"description": "Strategic Legal Solutions",
+		"banner": "sls.png"
+	},
+	{
+		"description": "Innovative Legal Approaches",
+		"banner": "ila.png"
+	},
+	{
+		"description": "Dedicated Legal Support",
+		"banner": "dls.png"
+	},
+	{
+		"description": "Professional Legal Counsel",
+		"banner": "plc.png"
+	},
+	{
+		"description": "Efficient Legal Processes",
+		"banner": "elp.png"
+	},
+	{
+		"description": "Effective Dispute Resolution",
+		"banner": "edr.png"
+	},
+	{
+		"description": "Holistic Legal Services",
+		"banner": "hls.png"
+	}
 ]

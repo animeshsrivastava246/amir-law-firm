@@ -18,7 +18,7 @@ const Header = () => {
 			<TopBar />
 			{/* Main Header */}
 			<header className="w-full">
-				<nav className="bg-gray-900 p-6 shadow-md">
+				<nav className="bg-gray-900 p-3 shadow-md">
 					<div className="container mx-auto flex justify-between items-center">
 						{/* Logo */}
 						<Link to="/" className="flex items-center">
