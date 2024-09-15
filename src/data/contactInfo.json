@@ -1,0 +1,13 @@
+{
+	"email": "info@lawfirm.com",
+	"tel": "+919876543210",
+	"phone": "+91 98765 43210",
+	"address": "Lucknow, India",
+	"socialMedia": {
+		"facebook": "https://www.facebook.com/lawfirm",
+		"x": "https://x.com/lawfirm",
+		"instagram": "https://www.instagram.com/lawfirm",
+		"linkedin": "https://www.linkedin.com/company/lawfirm",
+		"whatsapp": "9876543210"
+	}
+}

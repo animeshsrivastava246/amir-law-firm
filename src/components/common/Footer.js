@@ -7,8 +7,10 @@ import {
 	FaInstagram,
 	FaLinkedinIn,
 	FaEnvelope,
-	FaTwitter,
+	FaWhatsapp, // Import WhatsApp icon
 } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import contactInfo from "../../data/contactInfo.json";
 
 const Footer = () => {
 	return (
@@ -20,7 +22,7 @@ const Footer = () => {
 						{/* Logo */}
 						<Link
 							to="/"
-							className="text-xl font-semibold mb-4 flex items-center"
+							className="text-2xl font-semibold mb-4 flex items-center"
 						>
 							<LawLogo
 								style={{ fill: "white", height: "80px", width: "120px" }} // Increased size for better visibility
@@ -40,17 +42,17 @@ const Footer = () => {
 
 				{/* Quick Links Section */}
 				<div>
-					<h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+					<h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
 					<ul className="space-y-2">
 						<li>
-							<Link to="/about" className="text-gray-400 hover:text-yellow-500">
+							<Link to="/about" className="text-gray-400 hover:text-indigo-500">
 								About Us
 							</Link>
 						</li>
 						<li>
 							<Link
 								to="/careers"
-								className="text-gray-400 hover:text-yellow-500"
+								className="text-gray-400 hover:text-indigo-500"
 							>
 								Careers
 							</Link>
@@ -58,7 +60,7 @@ const Footer = () => {
 						<li>
 							<Link
 								to="/privacy-policy"
-								className="text-gray-400 hover:text-yellow-500"
+								className="text-gray-400 hover:text-indigo-500"
 							>
 								Privacy Policy
 							</Link>
@@ -66,7 +68,7 @@ const Footer = () => {
 						<li>
 							<Link
 								to="/terms-conditions"
-								className="text-gray-400 hover:text-yellow-500"
+								className="text-gray-400 hover:text-indigo-500"
 							>
 								Terms & Conditions
 							</Link>
@@ -74,7 +76,7 @@ const Footer = () => {
 						<li>
 							<Link
 								to="/contact"
-								className="text-gray-400 hover:text-yellow-500"
+								className="text-gray-400 hover:text-indigo-500"
 							>
 								Contact Us
 							</Link>
@@ -84,50 +86,58 @@ const Footer = () => {
 
 				{/* Social Media & Contact Section */}
 				<div>
-					<h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+					<h3 className="text-2xl font-semibold mb-4">Follow Us</h3>
 					<div className="flex space-x-4 mb-6">
 						<a
-							href="https://facebook.com"
+							href={contactInfo.socialMedia.facebook}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-400 hover:text-yellow-500"
+							className="text-gray-400 hover:text-indigo-500"
 						>
 							<FaFacebookF size={24} />
 						</a>
 						<a
-							href="https://twitter.com"
+							href={contactInfo.socialMedia.x}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-400 hover:text-yellow-500"
+							className="text-gray-400 hover:text-indigo-500"
 						>
-							<FaTwitter size={24} />
+							<BsTwitterX size={24} />
 						</a>
 						<a
-							href="https://linkedin.com"
+							href={contactInfo.socialMedia.linkedin}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-400 hover:text-yellow-500"
+							className="text-gray-400 hover:text-indigo-500"
 						>
 							<FaLinkedinIn size={24} />
 						</a>
 						<a
-							href="https://instagram.com"
+							href={contactInfo.socialMedia.instagram}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-400 hover:text-yellow-500"
+							className="text-gray-400 hover:text-indigo-500"
 						>
 							<FaInstagram size={24} />
 						</a>
+						<a
+							href={contactInfo.socialMedia.whatsapp}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-gray-400 hover:text-indigo-500"
+						>
+							<FaWhatsapp size={24} />
+						</a>
 					</div>
 
-					<h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+					<h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
 					<p className="text-gray-400 flex items-center">
 						<FaEnvelope className="mr-2" />
-						Email: info@lawfirm.com
+						Email: {contactInfo.email}
 					</p>
 					<p className="text-gray-400 flex items-center">
 						<FaPhone className="mr-2" />
-						Phone: +91 98765 43210
+						Phone: {contactInfo.phone}
 					</p>
 				</div>
 			</div>

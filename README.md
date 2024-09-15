@@ -59,7 +59,7 @@ The application will be available at `http://localhost:3000` by default.
 
 - **`src/assets/`**: Contains images, logos, and other static assets.
 - **`src/components/`**: Contains reusable React components.
-- **`src/data/`**: Contains JSON files for blogs, clients, practice areas, and testimonies.
+- **`src/data/`**: Contains JSON files for blogs, clients, contact info, practice areas, and testimonies.
 - **`src/styles/`**: Contains TailwindCSS configuration and custom styles.
 - **`src/App.js`**: Main application component and routing setup.
 - **`src/index.js`**: Application entry point.
@@ -70,7 +70,7 @@ The application will be available at `http://localhost:3000` by default.
 
 ### Adding New Content
 
-1. **Update JSON Data**: Add or modify entries in `src/data/` to update blogs, clients, practice areas, or testimonies.
+1. **Update JSON Data**: Add or modify entries in `src/data/` to update blogs, clients, contact info, practice areas, or testimonies.
 2. **Add New Components**: Create new components in `src/components/` as needed, and import them into `App.js`.
 
 ## Testing

@@ -9,20 +9,25 @@ const Testimony = () => {
 	}, []);
 
 	return (
-		<section className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
-		style={{
-			backgroundImage: `url(${require("../../assets/backdrops/banner-law.png")})`,
-		}}
-	>
-			<div className="container mx-auto px-4">
-				<h2 className="text-4xl font-semibold text-center text-gray-800 mb-8">
-					What Our Clients Say
+		<section
+			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			style={{
+				backgroundImage: `url(${require("../../assets/backdrops/testimony.png")})`,
+			}}
+		>
+			{/* Overlay */}
+			<div className="absolute inset-0 bg-black bg-opacity-40" />
+
+			{/* Content */}
+			<div className="relative z-10 container mx-auto px-4">
+				<h2 className="text-5xl font-semibold text-center text-white mb-8">
+					Testimonies
 				</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{testimonies.map((testimony, index) => (
 						<article
 							key={index}
-							className="testimonial shadow-md rounded-lg bg-white p-6 flex flex-col items-center"
+							className="shadow-md rounded-lg bg-white bg-opacity-50 p-6 flex flex-col items-center transition-all duration-300 hover:bg-opacity-100"
 						>
 							<p className="text-lg text-gray-600 text-center mb-4">
 								{testimony.text}

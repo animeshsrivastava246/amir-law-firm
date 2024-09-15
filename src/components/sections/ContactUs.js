@@ -4,22 +4,31 @@ import AppointmentForm from "../forms/AppointmentForm";
 const ContactUs = () => {
 	return (
 		<main
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
 			style={{
-				backgroundImage: `url(${require("../../assets/logos/clients-logo.png")})`,
+				backgroundImage: `url(${require("../../assets/backdrops/contact.png")})`,
 			}}
 		>
-			<section className="container mx-auto text-center mb-12">
-				<h2 className="text-4xl font-semibold text-gray-800 mb-6">
+			{/* Overlay for better text readability */}
+			<div className="absolute inset-0 bg-black bg-opacity-60" />
+
+			<section className="relative container mx-auto text-center mb-12 px-4">
+				<h2 className="text-4xl md:text-5xl font-semibold text-white mb-6">
 					Contact Us
 				</h2>
-				<p className="text-lg text-gray-600">Email: info@lawfirm.com</p>
-				<p className="text-lg text-gray-600">Phone: +91 98765 43210</p>
-				<p className="text-lg text-gray-600">Address: Lucknow, India</p>
+				<p className="text-lg md:text-xl text-gray-200 mb-4">
+					Email: info@lawfirm.com
+				</p>
+				<p className="text-lg md:text-xl text-gray-200 mb-4">
+					Phone: +91 98765 43210
+				</p>
+				<p className="text-lg md:text-xl text-gray-200">
+					Address: Lucknow, India
+				</p>
 			</section>
 
 			{/* Include Appointment Form */}
-			<section className="bg-white py-12 shadow-lg">
+			<section className="relative container mx-auto px-4 my-16">
 				<AppointmentForm />
 			</section>
 		</main>

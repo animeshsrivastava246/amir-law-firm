@@ -5,14 +5,17 @@ const Careers = () => {
 		<main
 			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
 			style={{
-				backgroundImage: `url(${require("../../assets/logos/clients-logo.png")})`,
+				backgroundImage: `url(${require("../../assets/backdrops/career.png")})`,
 			}}
 		>
-			<section className="container mx-auto text-center">
-				<h2 className="text-4xl font-semibold text-gray-800 mb-6">
+			{/* Overlay for better text readability */}
+			<div className="absolute inset-0 bg-black bg-opacity-60" />
+
+			<section className="relative container mx-auto text-center px-4">
+				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
 					Careers - Join Our Esteemed Legal Team
 				</h2>
-				<p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+				<p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
 					At Amir Law Firm, we pride ourselves on being at the forefront of
 					legal excellence, offering unparalleled services across a wide range
 					of practice areas. Our success is driven by the dedication and talent

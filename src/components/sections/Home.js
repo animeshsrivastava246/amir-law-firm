@@ -29,17 +29,17 @@ const Home = () => {
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
 					}}
-					className="w-full h-[450px] relative"
+					className="w-full h-[30vh] sm:h-[40vh] lg:h-[50vh] relative"
 				>
 					{carousels.map((carousel, index) => (
 						<SwiperSlide key={index}>
 							<img
 								src={require(`../../assets/banners/${carousel.banner}`)}
 								alt={`${carousel.description}`}
-								className="w-full h-full object-fill"
+								className="w-full h-full object-cover"
 							/>
 							<div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-4 rounded">
-								<p className="text-xl font-semibold">{`${carousel.description}`}</p>
+								<p className="text-2xl font-semibold">{`${carousel.description}`}</p>
 							</div>
 						</SwiperSlide>
 					))}
@@ -53,13 +53,13 @@ const Home = () => {
 			<section
 				className="relative py-20 bg-gray-50 bg-fixed bg-cover bg-center"
 				style={{
-					backgroundImage: `url(${require("../../assets/banners/tls.png")})`,
+					backgroundImage: `url(${require("../../assets/backdrops/mission.png")})`,
 				}}
 			>
 				{/* Adding a dark overlay for better text readability */}
 				<div className="absolute inset-0 bg-black bg-opacity-50"></div>
 				<div className="relative container mx-auto text-center">
-					<h2 className="text-4xl font-semibold text-white mb-4">
+					<h2 className="text-5xl font-semibold text-white mb-4">
 						Our Mission
 					</h2>
 					<p className="text-lg text-gray-100 max-w-2xl mx-auto">

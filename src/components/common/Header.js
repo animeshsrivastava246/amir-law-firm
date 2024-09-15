@@ -1,16 +1,23 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ReactComponent as LawLogo } from "../../assets/logos/law-logo.svg";
 import TopBar from "./TopBar";
 
 const Header = () => {
 	// State for toggling the mobile menu
 	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const location = useLocation(); // Get the current location
 
 	// Toggle the mobile menu
 	const toggleMobileMenu = () => {
 		setMobileMenuOpen(!isMobileMenuOpen);
 	};
+
+	// Determine if the current path matches the link's path
+	const getLinkClass = (path) =>
+		`text-gray-100 hover:bg-indigo-800 px-4 py-2 rounded-md transition-transform transform hover:scale-105 duration-300 ${
+			location.pathname === path ? "border-b-2 border-indigo-400" : ""
+		}`;
 
 	return (
 		<main className="sticky top-0 z-50">
@@ -32,7 +39,7 @@ const Header = () => {
 						<div className="md:hidden">
 							<button
 								onClick={toggleMobileMenu}
-								className="text-gray-300 hover:text-yellow-500 focus:outline-none"
+								className="text-gray-300 hover:text-indigo-700 focus:outline-none"
 							>
 								{/* Hamburger icon */}
 								<svg
@@ -54,25 +61,22 @@ const Header = () => {
 
 						{/* Navigation Links for large screens */}
 						<div className="hidden md:flex space-x-6 text-lg">
-							<Link to="/" className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300">
+							<Link to="/" className={getLinkClass("/")}>
 								Home
 							</Link>
-							<Link to="/about" className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300">
+							<Link to="/about" className={getLinkClass("/about")}>
 								About Us
 							</Link>
 							<Link
 								to="/practice-areas"
-								className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300"
+								className={getLinkClass("/practice-areas")}
 							>
 								Practice Areas
 							</Link>
-							<Link to="/blogs" className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300">
+							<Link to="/blogs" className={getLinkClass("/blogs")}>
 								Blogs
 							</Link>
-							<Link
-								to="/contact"
-								className="text-gray-300 bg-yellow-700 hover:bg-yellow-600 px-4 py-2 rounded-md transition duration-300"
-							>
+							<Link to="/contact" className={getLinkClass("/contact")}>
 								Contact Us
 							</Link>
 						</div>
@@ -80,39 +84,59 @@ const Header = () => {
 
 					{/* Mobile Navigation Links */}
 					{isMobileMenuOpen && (
-						<div className="md:hidden bg-gray-800 p-4">
+						<div className="md:hidden bg-indigo-900 p-4 rounded-lg">
 							<Link
 								to="/"
 								onClick={toggleMobileMenu}
-								className="block text-gray-300 hover:text-yellow-500 mb-2"
+								className={`block text-gray-100 hover:text-indigo-400 mb-2 transition-transform transform hover:scale-105 duration-300 ${
+									location.pathname === "/"
+										? "border-b-2 border-indigo-400"
+										: ""
+								}`}
 							>
 								Home
 							</Link>
 							<Link
 								to="/about"
 								onClick={toggleMobileMenu}
-								className="block text-gray-300 hover:text-yellow-500 mb-2"
+								className={`block text-gray-100 hover:text-indigo-400 mb-2 transition-transform transform hover:scale-105 duration-300 ${
+									location.pathname === "/about"
+										? "border-b-2 border-indigo-400"
+										: ""
+								}`}
 							>
 								About Us
 							</Link>
 							<Link
 								to="/practice-areas"
 								onClick={toggleMobileMenu}
-								className="block text-gray-300 hover:text-yellow-500 mb-2"
+								className={`block text-gray-100 hover:text-indigo-400 mb-2 transition-transform transform hover:scale-105 duration-300 ${
+									location.pathname === "/practice-areas"
+										? "border-b-2 border-indigo-400"
+										: ""
+								}`}
 							>
 								Practice Areas
 							</Link>
 							<Link
 								to="/blogs"
 								onClick={toggleMobileMenu}
-								className="block text-gray-300 hover:text-yellow-500 mb-2"
+								className={`block text-gray-100 hover:text-indigo-400 mb-2 transition-transform transform hover:scale-105 duration-300 ${
+									location.pathname === "/blogs"
+										? "border-b-2 border-indigo-400"
+										: ""
+								}`}
 							>
 								Blogs
 							</Link>
 							<Link
 								to="/contact"
 								onClick={toggleMobileMenu}
-								className="block text-gray-300 hover:text-yellow-500 mb-2"
+								className={`block text-gray-100 hover:text-indigo-400 mb-2 transition-transform transform hover:scale-105 duration-300 ${
+									location.pathname === "/contact"
+										? "border-b-2 border-indigo-400"
+										: ""
+								}`}
 							>
 								Contact Us
 							</Link>
