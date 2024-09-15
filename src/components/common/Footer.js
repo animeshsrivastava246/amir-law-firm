@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as LawLogo } from "../../assets/logos/law-logo.svg";
+// import { ReactComponent as LawLogo } from "../../assets/logos/law-logo.svg";
 import {
 	FaPhone,
 	FaFacebookF,
@@ -24,8 +24,14 @@ const Footer = () => {
 							to="/"
 							className="text-2xl font-semibold mb-4 flex items-center"
 						>
-							<LawLogo
+							{/* <LawLogo
 								style={{ fill: "white", height: "80px", width: "120px" }} // Increased size for better visibility
+								className="mr-2"
+							/> */}
+							<img
+								src={require("../../assets/logos/law-logo-1.png")}
+								alt="Law Logo"
+								style={{ height: "4rem", width: "8rem" }} // Adjust the size as needed
 								className="mr-2"
 							/>
 							Amir Law Firm
