@@ -12,7 +12,7 @@ const ContactUs = () => {
 			{/* Overlay for better text readability */}
 			<div className="absolute inset-0 bg-black bg-opacity-60" />
 
-			<section className="relative container mx-auto text-center mb-12 px-4">
+			<section className="relative container mx-auto text-center mb-12 px-4 max-w-screen-xl ">
 				<h2 className="text-4xl md:text-5xl font-semibold text-white mb-6">
 					Contact Us
 				</h2>
@@ -28,7 +28,7 @@ const ContactUs = () => {
 			</section>
 
 			{/* Include Appointment Form */}
-			<section className="relative container mx-auto px-4 my-16">
+			<section className="relative container mx-auto px-4 my-16 max-w-screen-xl ">
 				<AppointmentForm />
 			</section>
 		</main>

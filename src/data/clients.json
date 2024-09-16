@@ -1,22 +1,18 @@
 [
 	{
-		"name": "ABC Corp",
-		"description": "Legal advisory for corporate restructuring.",
-		"client_img": "abc_corp.png"
+		"name": "Techtonic Solutions",
+		"description": "Provided expert legal advisory for corporate restructuring and strategic business planning."
 	},
 	{
-		"name": "XYZ Ltd",
-		"description": "Handled litigation and dispute resolution.",
-		"client_img": "xyz_ltd.png"
+		"name": "Pinnacle Legal Group",
+		"description": "Handled complex litigation and dispute resolution, achieving favorable outcomes in high-stakes cases."
 	},
 	{
-		"name": "PQR Enterprises",
-		"description": "Provided intellectual property consultation.",
-		"client_img": "pqr_enterprises.png"
+		"name": "Innovate IP Services",
+		"description": "Offered comprehensive intellectual property consultation, including patent filings and trademark protections for innovators."
 	},
 	{
-		"name": "Shelby Company",
-		"description": "Provided intellectual property consultation.",
-		"client_img": "shelby_company.png"
+		"name": "Guardian Law Associates",
+		"description": "Specialized in intellectual property consultation, including copyright management and patent strategy for creative industries."
 	}
 ]

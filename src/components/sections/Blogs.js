@@ -21,7 +21,7 @@ const Blogs = () => {
 			}}
 		>
 			<section className="bg-black bg-opacity-50 py-16">
-				<div className="container mx-auto">
+				<div className="container mx-auto max-w-screen-xl ">
 					<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12">
 						Our Blogs
 					</h2>
@@ -39,7 +39,7 @@ const Blogs = () => {
 								<h3 className="text-3xl font-bold text-gray-700 mb-4">
 									{blog.title}
 								</h3>
-								<p className="text-gray-600">
+								<p className="text-gray-600 text-justify">
 									{expandedBlog === blog.title ? blog.content : blog.excerpt}
 								</p>
 								<button

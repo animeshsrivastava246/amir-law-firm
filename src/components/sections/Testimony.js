@@ -19,7 +19,7 @@ const Testimony = () => {
 			<div className="absolute inset-0 bg-black bg-opacity-40" />
 
 			{/* Content */}
-			<div className="relative z-10 container mx-auto px-4">
+			<div className="relative container mx-auto px-4 max-w-screen-xl ">
 				<h2 className="text-5xl font-semibold text-center text-white mb-8">
 					Testimonies
 				</h2>
@@ -27,7 +27,7 @@ const Testimony = () => {
 					{testimonies.map((testimony, index) => (
 						<article
 							key={index}
-							className="shadow-md rounded-lg bg-white bg-opacity-50 p-6 flex flex-col items-center transition-all duration-300 hover:bg-opacity-100"
+							className="shadow-md rounded-lg bg-white p-6 flex flex-col items-center transition-all duration-300 hover:scale-95"
 						>
 							<p className="text-lg text-gray-600 text-center mb-4">
 								{testimony.text}

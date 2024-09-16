@@ -14,8 +14,8 @@ import contactInfo from "../../data/contactInfo.json";
 
 const Footer = () => {
 	return (
-		<footer className="w-full bg-gray-800 text-white p-8 flex flex-col items-center mt-auto">
-			<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+		<footer className="w-full bg-gray-800 text-white p-8 py-2 flex flex-col items-center mt-auto">
+			<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-xl ">
 				{/* Company Info Section */}
 				<div>
 					<h3>

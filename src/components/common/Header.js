@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-// import { ReactComponent as LawLogo } from "../../assets/logos/law-logo.svg";
 import TopBar from "./TopBar";
 
 const Header = () => {
@@ -15,7 +14,7 @@ const Header = () => {
 
 	// Determine if the current path matches the link's path
 	const getLinkClass = (path) =>
-		`text-gray-100 hover:bg-indigo-800 px-3 py-2 rounded-md transition-transform transform hover:scale-105 duration-300 ${
+		`text-gray-100 hover:bg-indigo-800 px-2 py-1 rounded-md transition-transform transform hover:scale-105 duration-300 ${
 			location.pathname === path
 				? "border-b-2 text-indigo-400 border-indigo-400"
 				: ""
@@ -27,14 +26,10 @@ const Header = () => {
 			<TopBar />
 			{/* Main Header */}
 			<header className="w-full">
-				<nav className="bg-gray-900 py-2 shadow-md">
-					<div className="container mx-auto flex justify-between items-center">
+				<nav className="bg-gray-900 py-0.5 shadow-md">
+					<div className="container mx-auto flex justify-between items-center max-w-screen-xl">
 						{/* Logo */}
 						<Link to="/" className="flex items-center">
-							{/* <LawLogo
-								style={{ fill: "white", height: "4rem", width: "6rem" }} // Used rem units for relative sizing
-								className="mr-2"
-							/> */}
 							<img
 								src={require("../../assets/logos/law-logo-1.png")}
 								alt="Law Logo"
@@ -68,7 +63,7 @@ const Header = () => {
 						</div>
 
 						{/* Navigation Links for large screens */}
-						<div className="hidden md:flex space-x-5 text-lg">
+						<div className="hidden md:flex space-x-3 text-lg">
 							<Link to="/" className={getLinkClass("/")}>
 								Home
 							</Link>
@@ -84,8 +79,15 @@ const Header = () => {
 							<Link to="/blogs" className={getLinkClass("/blogs")}>
 								Blogs
 							</Link>
-							<Link to="/contact" className={getLinkClass("/contact")}>
-								Contact Us
+							<Link
+								to="/contact"
+								className={`px-4 py-1 text-white rounded-lg transition-transform transform hover:scale-105 duration-300 bg-indigo-700 hover:bg-indigo-800 ${
+									location.pathname === "/contact"
+										? "border-b-2 border-indigo-500"
+										: ""
+								}`}
+							>
+								Make an Appointment
 							</Link>
 						</div>
 					</div>
@@ -102,7 +104,7 @@ const Header = () => {
 						<Link
 							to="/"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-2 transition-transform transform hover:scale-105 duration-300 ${
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
 								location.pathname === "/"
 									? "border-b-2 text-indigo-400 border-indigo-400"
 									: ""
@@ -113,7 +115,7 @@ const Header = () => {
 						<Link
 							to="/about"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-2 transition-transform transform hover:scale-105 duration-300 ${
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
 								location.pathname === "/about"
 									? "border-b-2 text-indigo-400 border-indigo-400"
 									: ""
@@ -124,7 +126,7 @@ const Header = () => {
 						<Link
 							to="/practice-areas"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-2 transition-transform transform hover:scale-105 duration-300 ${
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
 								location.pathname === "/practice-areas"
 									? "border-b-2 text-indigo-400 border-indigo-400"
 									: ""
@@ -135,7 +137,7 @@ const Header = () => {
 						<Link
 							to="/blogs"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-2 transition-transform transform hover:scale-105 duration-300 ${
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
 								location.pathname === "/blogs"
 									? "border-b-2 text-indigo-400 border-indigo-400"
 									: ""
@@ -146,13 +148,13 @@ const Header = () => {
 						<Link
 							to="/contact"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-2 transition-transform transform hover:scale-105 duration-300 ${
+							className={`block text-gray-100 hover:text-indigo-400 bg-indigo-700 hover:bg-indigo-800 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
 								location.pathname === "/contact"
 									? "border-b-2 text-indigo-400 border-indigo-400"
 									: ""
 							}`}
 						>
-							Contact Us
+							Make an Appointment
 						</Link>
 					</div>
 				</nav>
