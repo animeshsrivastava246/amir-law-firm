@@ -1,5 +1,6 @@
 import React from "react";
 import AppointmentForm from "../forms/AppointmentForm";
+import contactInfo from "../../data/contactInfo.json";
 
 const ContactUs = () => {
 	return (
@@ -17,13 +18,13 @@ const ContactUs = () => {
 					Contact Us
 				</h2>
 				<p className="text-lg md:text-xl text-gray-200 mb-4">
-					Email: info@lawfirm.com
+					Email: {contactInfo.email}
 				</p>
 				<p className="text-lg md:text-xl text-gray-200 mb-4">
-					Phone: +91 98765 43210
+					Phone: {contactInfo.phone}
 				</p>
 				<p className="text-lg md:text-xl text-gray-200">
-					Address: Lucknow, India
+					Address: {contactInfo.address}
 				</p>
 			</section>
 
