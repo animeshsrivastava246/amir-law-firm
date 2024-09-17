@@ -3,7 +3,7 @@ import blogsData from "../../data/blogs.json";
 
 const Blogs = () => {
 	const [blogs, setBlogs] = useState([]);
-	const [expandedBlog, setExpandedBlog] = useState(null); // Initial state as null
+	const [expandedBlog, setExpandedBlog] = useState(null);
 
 	useEffect(() => {
 		setBlogs(blogsData);
@@ -15,27 +15,30 @@ const Blogs = () => {
 
 	return (
 		<main
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/blogs.png")})`,
 			}}
 		>
-			<section className="bg-black bg-opacity-50 py-16">
-				<div className="container mx-auto max-w-screen-xl ">
-					<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12">
-						Our Blogs
-					</h2>
-					<ul className="space-y-8 max-w-4xl mx-auto">
-						{blogs.map((blog) => (
-							<li
-								key={blog.title}
-								className={`p-6 bg-white shadow-md rounded-lg transition-all duration-300 
-									${
-										expandedBlog === blog.title
-											? "bg-opacity-100"
-											: "bg-opacity-50 hover:bg-opacity-100"
-									}`}
-							>
+			<section className="container mx-auto max-w-screen-xl">
+				<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12">
+					Our Blogs
+				</h2>
+				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{blogs.map((blog) => (
+						<article
+							key={blog.title}
+							className="relative bg-white shadow-md rounded-lg overflow-hidden transition-all duration-300 hover:scale-95"
+						>
+							<img
+								src={require(`../../assets/blogs/${
+									blog.image ? blog.image : "default.png"
+								}`)}
+								alt={blog.name}
+								className="w-full h-64 object-contain rounded-t-md bg-indigo-950"
+							/>
+
+							<div className="relative p-6">
 								<h3 className="text-3xl font-bold text-gray-700 mb-4">
 									{blog.title}
 								</h3>
@@ -43,15 +46,15 @@ const Blogs = () => {
 									{expandedBlog === blog.title ? blog.content : blog.excerpt}
 								</p>
 								<button
-									className="text-indigo-700 mt-4 block"
+									className="text-indigo-600 mt-4 block"
 									onClick={() => handleToggleExpand(blog.title)}
 								>
 									{expandedBlog === blog.title ? "Read Less" : "Read More"}
 								</button>
-							</li>
-						))}
-					</ul>
-				</div>
+							</div>
+						</article>
+					))}
+				</section>
 			</section>
 		</main>
 	);

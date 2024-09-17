@@ -1,0 +1,38 @@
+[
+	{
+		"name": "John Doe",
+		"position": "Senior Attorney",
+		"description": "John is a senior attorney with 15 years of experience in corporate law and legal representation.",
+		"image": "john_doe.png"
+	},
+	{
+		"name": "Jane Smith",
+		"position": "Family Law Expert",
+		"description": "Jane specializes in family law and has successfully represented numerous clients in high-profile cases.",
+		"image": "jane_smith.png"
+	},
+	{
+		"name": "Michael Johnson",
+		"position": "Criminal Defense Lawyer",
+		"description": "Michael is a seasoned criminal defense lawyer, known for his strategic approach in the courtroom.",
+		"image": "mike_johnson.png"
+	},
+	{
+		"name": "Emily Davis",
+		"position": "Estate Planning Specialist",
+		"description": "Emily has over 10 years of experience in estate planning and wills, ensuring that her clients' legacies are secure.",
+		"image": "emily_davis.png"
+	},
+	{
+		"name": "Robert Wilson",
+		"position": "Litigation Attorney",
+		"description": "Robert is a dedicated litigation attorney with a focus on civil disputes, bringing a wealth of experience to his cases.",
+		"image": "robert_wilson.png"
+	},
+	{
+		"name": "Sophia Martinez",
+		"position": "Immigration Lawyer",
+		"description": "Sophia is a passionate immigration lawyer, committed to helping clients navigate the complexities of immigration law.",
+		"image": "sophia_martinez.png"
+	}
+]

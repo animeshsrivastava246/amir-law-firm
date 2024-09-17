@@ -5,7 +5,7 @@ import {
 	FaInstagram,
 	FaLinkedinIn,
 	FaEnvelope,
-	FaWhatsapp, // Import WhatsApp icon
+	FaWhatsapp
 } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import contactInfo from "../../data/contactInfo.json";
@@ -19,9 +19,9 @@ const TopBar = () => {
 					{/* Call Us */}
 					<a
 						href={`tel:${contactInfo.tel}`}
-						className="flex items-center hover:bg-indigo-900 px-2 py-1 rounded-full transition-transform transform hover:scale-105 duration-300 whitespace-nowrap"
+						className="flex items-center hover:bg-indigo-900 p-2 rounded-full transition-transform transform hover:scale-105 duration-300 whitespace-nowrap"
 					>
-						<FaPhone className="text-2xl sm:hidden text-indigo-700" />
+						<FaPhone className="text-2xl sm:hidden" />
 						<span className="hidden sm:inline">
 							Phone: {contactInfo.phone}
 						</span>
@@ -32,7 +32,7 @@ const TopBar = () => {
 						href={`mailto:${contactInfo.email}`}
 						className="flex items-center hover:bg-indigo-900 px-2 py-1 rounded-full transition-transform transform hover:scale-105 duration-300 whitespace-nowrap"
 					>
-						<FaEnvelope className="text-2xl sm:hidden text-indigo-700" />
+						<FaEnvelope className="text-2xl sm:hidden" />
 						<span className="hidden sm:inline">Email: {contactInfo.email}</span>
 					</a>
 				</div>
@@ -45,7 +45,7 @@ const TopBar = () => {
 						rel="noopener noreferrer"
 						className="hover:bg-indigo-900 px-2 py-1 rounded-full transition-transform transform hover:scale-105 duration-300"
 					>
-						<FaFacebookF className="text-2xl text-indigo-700" />
+						<FaFacebookF className="text-xl" />
 					</a>
 
 					<a
@@ -54,7 +54,7 @@ const TopBar = () => {
 						rel="noopener noreferrer"
 						className="hover:bg-indigo-900 px-2 py-1 rounded-full transition-transform transform hover:scale-105 duration-300"
 					>
-						<BsTwitterX className="text-2xl text-indigo-700" />
+						<BsTwitterX className="text-xl" />
 					</a>
 
 					<a
@@ -63,7 +63,7 @@ const TopBar = () => {
 						rel="noopener noreferrer"
 						className="hover:bg-indigo-900 px-2 py-1 rounded-full transition-transform transform hover:scale-105 duration-300"
 					>
-						<FaLinkedinIn className="text-2xl text-indigo-700" />
+						<FaLinkedinIn className="text-xl" />
 					</a>
 
 					<a
@@ -72,7 +72,7 @@ const TopBar = () => {
 						rel="noopener noreferrer"
 						className="hover:bg-indigo-900 px-2 py-1 rounded-full transition-transform transform hover:scale-105 duration-300"
 					>
-						<FaInstagram className="text-2xl text-indigo-700" />
+						<FaInstagram className="text-xl" />
 					</a>
 
 					<a
@@ -81,7 +81,7 @@ const TopBar = () => {
 						rel="noopener noreferrer"
 						className="hover:bg-indigo-900 px-2 py-1 rounded-full transition-transform transform hover:scale-105 duration-300"
 					>
-						<FaWhatsapp className="text-2xl text-indigo-700" />
+						<FaWhatsapp className="text-xl" />
 					</a>
 				</div>
 			</div>

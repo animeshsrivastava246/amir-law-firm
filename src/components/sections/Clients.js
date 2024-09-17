@@ -10,7 +10,7 @@ const Clients = () => {
 
 	return (
 		<section
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/clients.png")})`,
 			}}
@@ -23,9 +23,7 @@ const Clients = () => {
 							key={index}
 							className="p-6 bg-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-95"
 						>
-							<h3 className="text-2xl font-medium mb-2">
-								{client.name}
-							</h3>
+							<h3 className="text-2xl font-medium mb-2">{client.name}</h3>
 							<p className="text-gray-600">{client.description}</p>
 						</div>
 					))}

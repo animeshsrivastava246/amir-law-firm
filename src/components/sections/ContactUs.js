@@ -4,7 +4,7 @@ import AppointmentForm from "../forms/AppointmentForm";
 const ContactUs = () => {
 	return (
 		<main
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/contact.png")})`,
 			}}
@@ -28,7 +28,7 @@ const ContactUs = () => {
 			</section>
 
 			{/* Include Appointment Form */}
-			<section className="relative container mx-auto px-4 my-16 max-w-screen-xl ">
+			<section className="relative container mx-auto p-4 max-w-screen-xl ">
 				<AppointmentForm />
 			</section>
 		</main>

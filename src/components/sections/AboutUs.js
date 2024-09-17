@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = () => {
 	return (
 		<main
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/about.png")})`,
 			}}
@@ -22,31 +22,34 @@ const AboutUs = () => {
 					our comprehensive and nuanced understanding of complex legal matters.
 					Our mission is to deliver exemplary legal services that are not merely
 					transactional but are deeply rooted in an unwavering commitment to
-					personalized client care. <br/>At the core of our practice is a dedication
-					to integrating a bespoke approach with our extensive legal acumen. We
-					understand that each client's situation is unique and that
-					cookie-cutter solutions are insufficient in addressing the intricacies
-					of individual legal challenges. Therefore, we approach every case with
-					meticulous attention to detail, employing a strategy tailored to the
-					specific needs and objectives of our clients. <br /> Our approach is
+					personalized client care. <br />
+					At the core of our practice is a dedication to integrating a bespoke
+					approach with our extensive legal acumen. We understand that each
+					client's situation is unique and that cookie-cutter solutions are
+					insufficient in addressing the intricacies of individual legal
+					challenges. Therefore, we approach every case with meticulous
+					attention to detail, employing a strategy tailored to the specific
+					needs and objectives of our clients. <br /> Our approach is
 					characterized by an assiduous focus on achieving the highest standard
 					of legal representation. This involves a thorough and nuanced analysis
 					of each case, drawing upon our firm’s extensive experience and
 					expertise. We engage in a comprehensive review of all pertinent facts,
 					legal precedents, and relevant statutes, ensuring that our clients
 					benefit from a well-rounded and strategic approach to their legal
-					matters. <br />In our pursuit of legal excellence, we remain steadfast in
-					our commitment to providing not only top-tier legal solutions but also
+					matters. <br />
+					In our pursuit of legal excellence, we remain steadfast in our
+					commitment to providing not only top-tier legal solutions but also
 					unparalleled client support. Our firm’s ethos is grounded in the
 					principles of integrity, diligence, and precision. We are dedicated to
 					advocating for our clients' rights with the utmost rigor and
 					professionalism, striving to secure outcomes that align with their
-					best interests. <br />By harmonizing our bespoke approach with our
-					formidable legal expertise, we endeavor to not only meet but exceed
-					our clients' expectations. Our ultimate goal is to offer legal
-					services that are as precise as they are impactful, ensuring that
-					every client receives the highest caliber of representation and
-					support throughout their legal journey.
+					best interests. <br />
+					By harmonizing our bespoke approach with our formidable legal
+					expertise, we endeavor to not only meet but exceed our clients'
+					expectations. Our ultimate goal is to offer legal services that are as
+					precise as they are impactful, ensuring that every client receives the
+					highest caliber of representation and support throughout their legal
+					journey.
 				</p>
 			</section>
 		</main>

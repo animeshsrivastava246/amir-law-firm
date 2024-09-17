@@ -3,7 +3,7 @@ import React from "react";
 const Careers = () => {
 	return (
 		<main
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center"
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/career.png")})`,
 			}}

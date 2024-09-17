@@ -2,22 +2,26 @@
 	{
 		"title": "The Role of a Family Lawyer",
 		"excerpt": "Family lawyers handle divorce, custody, and domestic violence cases.",
-		"content": "Family lawyers play a crucial role in navigating the complexities of family law, including divorce, child custody, and domestic violence. Their expertise ensures that sensitive matters are handled with care and that clients receive compassionate and effective representation during challenging times."
+		"content": "Family lawyers play a crucial role in navigating the complexities of family law, including divorce, child custody, and domestic violence. Their expertise ensures that sensitive matters are handled with care and that clients receive compassionate and effective representation during challenging times.",
+		"image": "family_lawyer_role.png"
 	},
 	{
 		"title": "Navigating Personal Injury Claims",
 		"excerpt": "Personal injury law helps with negligence and compensation claims.",
-		"content": "Personal injury law is designed to help individuals who have been harmed due to the negligence or wrongdoing of others. Understanding the legal process and your rights can significantly impact the outcome of your claim. Expert legal counsel ensures you receive appropriate compensation for medical expenses, lost wages, and emotional distress."
+		"content": "Personal injury law is designed to help individuals who have been harmed due to the negligence or wrongdoing of others. Understanding the legal process and your rights can significantly impact the outcome of your claim. Expert legal counsel ensures you receive appropriate compensation for medical expenses, lost wages, and emotional distress.",
+		"image": "personal_injury_claims.png"
 	},
 	{
 		"title": "The Essentials of Estate Planning",
 		"excerpt": "Estate planning involves managing and distributing assets upon death.",
-		"content": "Estate planning involves the strategic management and distribution of your assets upon death. It includes drafting wills, setting up trusts, and planning for tax implications. Effective estate planning provides peace of mind, ensures your wishes are honored, and minimizes the potential for family disputes."
+		"content": "Estate planning involves the strategic management and distribution of your assets upon death. It includes drafting wills, setting up trusts, and planning for tax implications. Effective estate planning provides peace of mind, ensures your wishes are honored, and minimizes the potential for family disputes.",
+		"image": "estate_planning.png"
 	},
 	{
 		"title": "Corporate Law and Business Formation",
 		"excerpt": "Corporate law covers business formation, operation, and dissolution.",
-		"content": "Corporate law governs the formation, operation, and dissolution of businesses. Understanding legal structures such as corporations, partnerships, and LLCs is essential for ensuring compliance, protecting personal assets, and optimizing tax benefits. Legal guidance helps businesses navigate complex regulations and achieve their strategic goals."
+		"content": "Corporate law governs the formation, operation, and dissolution of businesses. Understanding legal structures such as corporations, partnerships, and LLCs is essential for ensuring compliance, protecting personal assets, and optimizing tax benefits. Legal guidance helps businesses navigate complex regulations and achieve their strategic goals.",
+		"image": "corporate_law.png"
 	},
 	{
 		"title": "Immigration Law: Your Rights and Obligations",

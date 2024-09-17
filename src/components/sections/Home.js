@@ -10,6 +10,7 @@ import CarouselData from "../../data/carousel.json";
 import AboutUsHome from "./AboutUsHome";
 import BlogsHome from "./BlogsHome";
 import PracticeAreasHome from "./PracticeAreasHome";
+import Teams from "./Teams";
 
 const Home = () => {
 	const [carousels, setCarousels] = useState([]);
@@ -32,14 +33,14 @@ const Home = () => {
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
 					}}
-					className="w-full h-[40vh] sm:h-[50vh] lg:h-[60vh] relative max-w-screen-xl"
+					className="w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] relative"
 				>
 					{carousels.map((carousel, index) => (
-						<SwiperSlide key={index}>
+						<SwiperSlide key={index} className="relative">
 							<img
 								src={require(`../../assets/banners/${carousel.banner}`)}
 								alt={`${carousel.description}`}
-								className="w-full h-full object-fill"
+								className="w-full h-full object-contain" // Use object-contain to fit image within container
 							/>
 							<div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-2 rounded">
 								<p className="text-2xl font-semibold">{`${carousel.description}`}</p>
@@ -67,13 +68,18 @@ const Home = () => {
 				<BlogsHome />
 			</section>
 
+			{/* Team Section */}
+			<section className="my-12">
+				<Teams />
+			</section>
+
 			{/* Clients Section */}
 			<section className="my-12">
 				<Clients />
 			</section>
 
+			{/* Testimony Section */}
 			<section className="my-12">
-				{/* Testimony Section */}
 				<Testimony />
 			</section>
 

@@ -5,7 +5,7 @@ import TopBar from "./TopBar";
 const Header = () => {
 	// State for toggling the mobile menu
 	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-	const location = useLocation(); // Get the current location
+	const location = useLocation();
 
 	// Toggle the mobile menu
 	const toggleMobileMenu = () => {
@@ -33,7 +33,7 @@ const Header = () => {
 							<img
 								src={require("../../assets/logos/law-logo-1.png")}
 								alt="Law Logo"
-								style={{ height: "4rem", width: "8rem" }} // Adjust the size as needed
+								style={{ height: "4rem", width: "8rem" }}
 								className="mr-2"
 							/>
 						</Link>
@@ -46,7 +46,7 @@ const Header = () => {
 							>
 								{/* Hamburger icon */}
 								<svg
-									className="w-6 h-6" // Adjusted size for responsiveness
+									className="w-6 h-6"
 									fill="none"
 									stroke="currentColor"
 									viewBox="0 0 24 24"

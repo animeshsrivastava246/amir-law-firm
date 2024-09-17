@@ -3,7 +3,7 @@ import React from "react";
 const PrivacyPolicy = () => {
 	return (
 		<main
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/privacy.png")})`,
 			}}

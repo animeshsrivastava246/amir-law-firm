@@ -11,7 +11,7 @@ const BlogsHome = () => {
 
 	return (
 		<main
-			className="relative py-16 bg-gray-50 bg-fixed bg-cover bg-center min-h-[25vh]"
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center min-h-[25vh]"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/blogs.png")})`,
 			}}
@@ -27,16 +27,36 @@ const BlogsHome = () => {
 					{blogs.slice(0, 3).map((blog) => (
 						<article
 							key={blog.title}
-							className="shadow-md rounded-md bg-white py-4 px-6 transition-all duration-300 hover:scale-95 hover:shadow-lg"
+							className="relative shadow-md rounded-md bg-white transition-all duration-300 hover:scale-95 hover:shadow-lg overflow-hidden"
 						>
-							<h3 className="text-2xl font-medium mb-2">{blog.title}</h3>
-							<p className="text-gray-700">{blog.excerpt}</p>
+							{/* Blog Image */}
+							<div className="relative">
+								<img
+									src={require(`../../assets/blogs/${
+										blog.image ? blog.image : "default.png"
+									}`)}
+									alt={blog.title}
+									className="w-full h-48 object-cover rounded-md mb-4"
+								/>
+							</div>
+
+							<div className="relative z-10 p-2">
+								{/* Blog Title */}
+								<h3 className="text-2xl font-semibold text-gray-900 mb-2">
+									{blog.title}
+								</h3>
+								{/* Blog Date */}
+								<p className="text-sm text-gray-500 mb-4">{blog.date}</p>
+								{/* Blog Excerpt */}
+								<p className="text-gray-700">{blog.excerpt}</p>
+							</div>
 						</article>
 					))}
 				</section>
+				{/* Read More Button */}
 				<Link
 					to="/blogs"
-					className="inline-block bg-indigo-600 text-white mt-2 px-6 py-2 rounded-full hover:bg-indigo-700 transition"
+					className="inline-block bg-indigo-600 text-white mt-6 px-6 py-2 rounded-full hover:bg-indigo-700 transition"
 				>
 					Read More
 				</Link>

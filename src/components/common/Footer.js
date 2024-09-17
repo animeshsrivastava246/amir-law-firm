@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { ReactComponent as LawLogo } from "../../assets/logos/law-logo.svg";
 import {
 	FaPhone,
 	FaFacebookF,
 	FaInstagram,
 	FaLinkedinIn,
 	FaEnvelope,
-	FaWhatsapp, // Import WhatsApp icon
+	FaWhatsapp,
 } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import contactInfo from "../../data/contactInfo.json";
@@ -24,14 +23,10 @@ const Footer = () => {
 							to="/"
 							className="text-2xl font-semibold mb-4 flex items-center"
 						>
-							{/* <LawLogo
-								style={{ fill: "white", height: "80px", width: "120px" }} // Increased size for better visibility
-								className="mr-2"
-							/> */}
 							<img
 								src={require("../../assets/logos/law-logo-1.png")}
 								alt="Law Logo"
-								style={{ height: "4rem", width: "8rem" }} // Adjust the size as needed
+								style={{ height: "4rem", width: "8rem" }}
 								className="mr-2"
 							/>
 							Amir Law Firm
