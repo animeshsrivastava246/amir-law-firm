@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import TopBar from "./TopBar";
+import Logo from "./Logo";
 
 const Header = () => {
 	// State for toggling the mobile menu
@@ -14,29 +15,20 @@ const Header = () => {
 
 	// Determine if the current path matches the link's path
 	const getLinkClass = (path) =>
-		`text-gray-100 hover:bg-indigo-800 px-2 py-1 rounded-md transition-transform transform hover:scale-105 duration-300 ${
-			location.pathname === path
-				? "border-b-2 text-indigo-400 border-indigo-400"
-				: ""
+		`text-gray-100 hover:bg-indigo-800 px-2 py-1 rounded-none transition-transform transform hover:scale-105 duration-300 ${location.pathname === path
+			? "border-b-2 text-indigo-400 border-indigo-400"
+			: ""
 		}`;
 
 	return (
-		<main className="sticky top-0 z-50">
+		<main className="">
 			{/* Fixed TopBar - Separate from header */}
 			<TopBar />
 			{/* Main Header */}
-			<header className="w-full">
-				<nav className="bg-gray-900 py-0.5 shadow-md">
-					<div className="container mx-auto flex justify-between items-center max-w-screen-xl">
-						{/* Logo */}
-						<Link to="/" className="flex items-center">
-							<img
-								src={require("../../assets/logos/law-logo-1.png")}
-								alt="Law Logo"
-								style={{ height: "4rem", width: "8rem" }}
-								className="mr-2"
-							/>
-						</Link>
+			<header className="w-full sticky top-0 z-50">
+				<nav className="bg-gray-900 pt-1 pb-2 px-2 shadow-md" style={{ display: "grid", alignItems: "center", justifyItems: "center" }}>
+					<div className="container mx-auto flex pr-2 justify-between items-center w-full max-w-screen-xl">
+						<Logo />
 
 						{/* Hamburger Menu for small screens */}
 						<div className="md:hidden">
@@ -81,11 +73,10 @@ const Header = () => {
 							</Link>
 							<Link
 								to="/contact"
-								className={`px-4 py-1 text-white rounded-lg transition-transform transform hover:scale-105 duration-300 bg-indigo-700 hover:bg-indigo-800 ${
-									location.pathname === "/contact"
-										? "border-b-2 border-indigo-500"
-										: ""
-								}`}
+								className={`px-4 py-1 text-white rounded-sm transition-transform transform duration-300 bg-indigo-700 hover:bg-indigo-800 ${location.pathname === "/contact"
+									? "border-b-2 border-indigo-500"
+									: ""
+									}`}
 							>
 								Make an Appointment
 							</Link>
@@ -94,65 +85,59 @@ const Header = () => {
 
 					{/* Mobile Navigation Links */}
 					<div
-						className={`md:hidden bg-indigo-900 rounded-lg mt-2 overflow-hidden transition-all duration-300 ${
-							isMobileMenuOpen
-								? "max-h-screen opacity-100"
-								: "max-h-0 opacity-0"
-						}`}
+						className={`md:hidden w-full bg-indigo-900 rounded-lg mt-2 overflow-hidden transition-all duration-300 ${isMobileMenuOpen
+							? "max-h-screen opacity-100"
+							: "max-h-0 opacity-0 hidden"
+							}`}
 						style={{ transitionProperty: "max-height, opacity" }}
 					>
 						<Link
 							to="/"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
-								location.pathname === "/"
-									? "border-b-2 text-indigo-400 border-indigo-400"
-									: ""
-							}`}
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${location.pathname === "/"
+								? "border-b-2 text-indigo-400 border-indigo-400"
+								: ""
+								}`}
 						>
 							Home
 						</Link>
 						<Link
 							to="/about"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
-								location.pathname === "/about"
-									? "border-b-2 text-indigo-400 border-indigo-400"
-									: ""
-							}`}
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${location.pathname === "/about"
+								? "border-b-2 text-indigo-400 border-indigo-400"
+								: ""
+								}`}
 						>
 							About Us
 						</Link>
 						<Link
 							to="/practice-areas"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
-								location.pathname === "/practice-areas"
-									? "border-b-2 text-indigo-400 border-indigo-400"
-									: ""
-							}`}
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${location.pathname === "/practice-areas"
+								? "border-b-2 text-indigo-400 border-indigo-400"
+								: ""
+								}`}
 						>
 							Practice Areas
 						</Link>
 						<Link
 							to="/blogs"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
-								location.pathname === "/blogs"
-									? "border-b-2 text-indigo-400 border-indigo-400"
-									: ""
-							}`}
+							className={`block text-gray-100 hover:text-indigo-400 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${location.pathname === "/blogs"
+								? "border-b-2 text-indigo-400 border-indigo-400"
+								: ""
+								}`}
 						>
 							Blogs
 						</Link>
 						<Link
 							to="/contact"
 							onClick={toggleMobileMenu}
-							className={`block text-gray-100 hover:text-indigo-400 bg-indigo-700 hover:bg-indigo-800 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${
-								location.pathname === "/contact"
-									? "border-b-2 text-indigo-400 border-indigo-400"
-									: ""
-							}`}
+							className={`block text-gray-100 hover:text-indigo-400 bg-indigo-700 hover:bg-indigo-800 mb-2 px-4 py-1 transition-transform transform hover:scale-105 duration-300 ${location.pathname === "/contact"
+								? "border-b-2 text-indigo-400 border-indigo-400"
+								: ""
+								}`}
 						>
 							Make an Appointment
 						</Link>

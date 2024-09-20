@@ -10,10 +10,11 @@ import {
 } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import contactInfo from "../../data/contactInfo.json";
+import Logo from "./Logo";
 
 const Footer = () => {
 	return (
-		<footer className="w-full bg-gray-800 text-white p-8 py-2 flex flex-col items-center mt-auto">
+		<footer className="w-full bg-gray-800 text-white p-8 py-8 flex flex-col items-center mt-auto">
 			<div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-xl ">
 				{/* Company Info Section */}
 				<div>
@@ -21,14 +22,9 @@ const Footer = () => {
 						{/* Logo */}
 						<Link
 							to="/"
-							className="text-2xl font-semibold mb-4 flex items-center"
+							className="text-2xl font-semibold mb-4 flex items-center gap-4"
 						>
-							<img
-								src={require("../../assets/logos/law-logo-1.png")}
-								alt="Law Logo"
-								style={{ height: "4rem", width: "8rem" }}
-								className="mr-2"
-							/>
+							<Logo />
 							Amir Law Firm
 						</Link>
 					</h3>
@@ -137,7 +133,7 @@ const Footer = () => {
 						Email: {contactInfo.email}
 					</p>
 					<p className="text-gray-400 flex items-center">
-						<FaPhone className="mr-2" />
+						<FaPhone className="mr-2 rotate-90" />
 						Phone: {contactInfo.phone}
 					</p>
 				</div>
