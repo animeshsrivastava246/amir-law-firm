@@ -37,7 +37,7 @@ const PracticeAreasHome = () => {
         </section>
         <Link
           to="/practice-areas"
-          className="inline-block bg-indigo-600 text-white mt-6 px-8 py-3 rounded-full hover:bg-indigo-700 transition"
+          className="inline-block bg-indigo-600 text-white mt-6 px-8 py-3 rounded-md hover:bg-indigo-700 transition"
         >
           View All
         </Link>

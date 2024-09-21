@@ -48,7 +48,7 @@ const BlogsHome = () => {
         {/* Read More Button */}
         <Link
           to="/blogs"
-          className="inline-block bg-indigo-600 text-white mt-6 px-6 py-2 rounded-full hover:bg-indigo-700 transition"
+          className="inline-block bg-indigo-600 text-white mt-6 px-6 py-2 rounded-md hover:bg-indigo-700 transition"
         >
           Read More
         </Link>
