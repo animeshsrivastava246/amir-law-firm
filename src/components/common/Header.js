@@ -26,7 +26,7 @@ const Header = () => {
       {/* Fixed TopBar - Separate from header */}
       <TopBar />
       {/* Main Header */}
-      <header className="w-full">
+      <header className="w-full border-b-[1px] border-indigo-700 border-opacity-70">
         <nav
           className="bg-gray-900 pt-1 pb-2 px-2 shadow-md"
           style={{
