@@ -7,11 +7,11 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 
 const Testimony = () => {
-  const [testimonies, setTestimonies] = useState([]);
+	const [testimonies, setTestimonies] = useState([]);
 
-  useEffect(() => {
-    setTestimonies(testimoniesData);
-  }, []);
+	useEffect(() => {
+		setTestimonies(testimoniesData);
+	}, []);
 
 	return (
 		<section

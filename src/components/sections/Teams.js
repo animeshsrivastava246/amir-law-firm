@@ -7,11 +7,11 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 
 const Teams = () => {
-  const [team, setTeam] = useState([]);
+	const [team, setTeam] = useState([]);
 
-  useEffect(() => {
-    setTeam(teamData);
-  }, []);
+	useEffect(() => {
+		setTeam(teamData);
+	}, []);
 
 	return (
 		<section

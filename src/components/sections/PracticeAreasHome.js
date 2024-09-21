@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import practiceAreasData from "../../data/practiceAreas.json";
 
 const PracticeAreasHome = () => {
-  const [practiceAreas, setPracticeAreas] = useState([]);
+	const [practiceAreas, setPracticeAreas] = useState([]);
 
-  useEffect(() => {
-    setPracticeAreas(practiceAreasData);
-  }, []);
+	useEffect(() => {
+		setPracticeAreas(practiceAreasData);
+	}, []);
 
-  return (
-    <main
-      className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center min-h-[25vh]"
-      style={{
-        backgroundImage: `url(${require("../../assets/backdrops/privacy.png")})`,
-      }}
-    >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-70" />
+	return (
+		<main
+			className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center min-h-[25vh]"
+			style={{
+				backgroundImage: `url(${require("../../assets/backdrops/privacy.png")})`,
+			}}
+		>
+			{/* Overlay for better text readability */}
+			<div className="absolute inset-0 bg-black bg-opacity-70" />
 
 			<section className="relative container mx-auto text-center px-4 max-w-screen-xl">
 				<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12  p-3 bg-black bg-opacity-60">
