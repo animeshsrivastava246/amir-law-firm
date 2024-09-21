@@ -45,14 +45,14 @@ const AppointmentForm = () => {
 	};
 
 	return (
-		<main className="relative py-12 bg-gray-900 bg-opacity-50">
+		<main className="relative py-12">
 			<div className="container mx-auto px-4">
-				<h2 className="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-8">
+				<h2 className="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-8 bg-black bg-opacity-80 p-4">
 					Make an Appointment
 				</h2>
 				<form
 					onSubmit={handleSubmit}
-					className="max-w-md mx-auto space-y-6 p-6 bg-gray-800 shadow-lg rounded-lg bg-opacity-70"
+					className="max-w-md mx-auto space-y-6 p-6 bg-gray-800 shadow-lg rounded-lg bg-opacity-80"
 				>
 					<div>
 						<label className="block text-gray-200 text-base mb-1">Name</label>

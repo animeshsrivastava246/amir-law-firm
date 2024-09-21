@@ -20,9 +20,6 @@ const Testimony = () => {
 				backgroundImage: `url(${require("../../assets/backdrops/testimony.png")})`,
 			}}
 		>
-			{/* Overlay */}
-			<div className="absolute inset-0 bg-black bg-opacity-40" />
-
 			{/* Content */}
 			<div className="relative container mx-auto px-4 max-w-screen-xl">
 				<h2 className="text-5xl font-semibold text-center text-white my-8  p-3 bg-black bg-opacity-60">

@@ -20,9 +20,6 @@ const Teams = () => {
 				backgroundImage: `url(${require("../../assets/backdrops/teams.png")})`,
 			}}
 		>
-			{/* Overlay for better text readability */}
-			<div className="absolute inset-0 bg-black bg-opacity-60" />
-
 			<div className="relative container mx-auto text-center px-4 max-w-screen-xl">
 				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6 p-3 bg-black bg-opacity-60">
 					Meet Our Team

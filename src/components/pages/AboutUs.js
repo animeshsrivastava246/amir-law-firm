@@ -8,10 +8,7 @@ const AboutUs = () => {
         backgroundImage: `url(${require("../../assets/backdrops/about.png")})`,
       }}
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-60" />
-
-      <section className="relative container mx-auto text-center px-4 max-w-screen-xl ">
+      <section className="relative container mx-auto text-center p-4 max-w-screen-xl bg-black bg-opacity-80">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           About Us
         </h2>
