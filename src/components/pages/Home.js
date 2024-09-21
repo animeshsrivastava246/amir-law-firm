@@ -49,8 +49,8 @@ const Home = () => {
 						</SwiperSlide>
 					))}
 					{/* Navigation Buttons */}
-					<div className="swiper-button-prev !text-white !bg-gray-800 !bg-opacity-40 py-14 px-6 rounded-full hover:!bg-opacity-60 hover:shadow-lg transition-all duration-300 ease-in-out" />
-					<div className="swiper-button-next !text-white !bg-gray-800 !bg-opacity-40 py-14 px-6 rounded-full hover:!bg-opacity-60 hover:shadow-lg transition-all duration-300 ease-in-out" />
+					<div className="swiper-button-prev !text-white !bg-gray-800 !bg-opacity-40 py-10 px-4 md:py-14 md:px-6 rounded-full hover:!bg-opacity-60 hover:shadow-lg transition-all duration-300 ease-in-out" />
+					<div className="swiper-button-next !text-white !bg-gray-800 !bg-opacity-40 py-10 px-4 md:py-14 md:px-6 rounded-full hover:!bg-opacity-60 hover:shadow-lg transition-all duration-300 ease-in-out" />
 				</Swiper>
 			</section>
 
