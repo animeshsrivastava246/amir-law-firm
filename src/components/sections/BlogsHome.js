@@ -19,8 +19,8 @@ const BlogsHome = () => {
 			{/* Overlay for better text readability */}
 			<div className="absolute inset-0 bg-black bg-opacity-60" />
 
-			<section className="relative container mx-auto text-center px-4 max-w-screen-xl">
-				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+			<section className="relative container mx-auto text-center px-4 max-w-screen-xl ">
+				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6 p-3 bg-black bg-opacity-60">
 					Our Blogs
 				</h2>
 				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

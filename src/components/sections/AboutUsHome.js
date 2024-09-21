@@ -24,7 +24,7 @@ const AboutUsHome = () => {
 					</div>
 
 					{/* Right Side - Text Content */}
-					<div className="text-white text-justify">
+					<div className="text-white text-justify p-3 bg-black bg-opacity-60">
 						<h2 className="text-4xl md:text-5xl font-bold mb-6">About Us</h2>
 						<p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-4">
 							We are a distinguished law firm, renowned for our expertise across

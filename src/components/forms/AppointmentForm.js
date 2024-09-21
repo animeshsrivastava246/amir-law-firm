@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import contactInfo from "../../data/contactInfo.json";
 
 const AppointmentForm = () => {
 	const [formData, setFormData] = useState({
@@ -38,7 +39,7 @@ const AppointmentForm = () => {
 		e.preventDefault();
 		if (validateForm()) {
 			const { name, email, message } = formData;
-			const mailtoLink = `mailto:example@lawfirm.com?subject=Appointment Request&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+			const mailtoLink = `mailto:${contactInfo.email}?subject=Appointment Request&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 			window.location.href = mailtoLink;
 		}
 	};

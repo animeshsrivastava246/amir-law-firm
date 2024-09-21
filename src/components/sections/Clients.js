@@ -16,7 +16,7 @@ const Clients = () => {
 			}}
 		>
 			<div className="container mx-auto text-center max-w-screen-xl ">
-				<h2 className="text-5xl font-semibold text-white mb-12">Our Clients</h2>
+				<h2 className="text-5xl font-semibold text-white mb-12  p-3 bg-black bg-opacity-60">Our Clients</h2>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 					{clients.map((client, index) => (
 						<div

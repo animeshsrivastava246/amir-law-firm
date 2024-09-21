@@ -24,7 +24,7 @@ const Teams = () => {
 			<div className="absolute inset-0 bg-black bg-opacity-60" />
 
 			<div className="relative container mx-auto text-center px-4 max-w-screen-xl">
-				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6 p-3 bg-black bg-opacity-60">
 					Meet Our Team
 				</h2>
 				<Swiper
@@ -32,9 +32,12 @@ const Teams = () => {
 					spaceBetween={30}
 					slidesPerView={1}
 					loop={true}
-					autoplay={{ delay: 2000 }}
+					autoplay={{
+						delay: 0, // Set to 0 for continuous scrolling
+						pauseOnMouseEnter: true, // Pause when hovering
+					}}
+					speed={1500} // Increase speed for continuous movement
 					navigation={{
-						// Ensure correct navigation setup
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
 					}}
@@ -44,7 +47,6 @@ const Teams = () => {
 						768: { slidesPerView: 2 },
 						1024: { slidesPerView: 3 },
 					}}
-					pagination={{ clickable: true }} // Add pagination dots
 				>
 					{team.map((member, index) => (
 						<SwiperSlide key={index} className="flex items-stretch">
