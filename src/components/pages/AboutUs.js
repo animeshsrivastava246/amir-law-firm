@@ -2,8 +2,16 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <main className="relative p-8 bg-gray-900 bg-fixed bg-cover bg-center min-h-[75vh]">
-      <section className="relative container mx-auto text-center px-4 max-w-screen-xl">
+    <main
+      className="relative p-8 bg-gray-50 bg-fixed bg-cover bg-center min-h-[75vh]"
+      style={{
+        backgroundImage: `url(${require("../../assets/backdrops/about.png")})`,
+      }}
+    >
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-60" />
+
+      <section className="relative container mx-auto text-center px-4 max-w-screen-xl ">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           About Us
         </h2>
