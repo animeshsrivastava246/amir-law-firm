@@ -8,7 +8,7 @@ const TermsAndConditions = () => {
 				backgroundImage: `url(${require("../../assets/backdrops/terms.png")})`,
 			}}
 		>
-			<section className="relative container mx-auto p-4 text-center max-w-screen-xl flex flex-col items-center gap-6 bg-black bg-opacity-80">
+			<section className="relative container mx-auto p-4 text-center max-w-screen-xl flex flex-col items-center gap-6 bg-black bg-opacity-80 rounded-lg">
 				<h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
 					Terms And Conditions
 				</h2>

@@ -22,7 +22,7 @@ const Testimony = () => {
 		>
 			{/* Content */}
 			<div className="relative container mx-auto px-4 max-w-screen-xl">
-				<h2 className="text-5xl font-semibold text-center text-white my-8  p-3 bg-black bg-opacity-60">
+				<h2 className="text-5xl font-semibold text-center text-white my-8  p-3 bg-black bg-opacity-80">
 					Testimonies
 				</h2>
 				<Swiper

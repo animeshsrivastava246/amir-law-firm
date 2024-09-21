@@ -5,7 +5,7 @@ const Careers = () => {
     <main className="relative p-8 bg-fixed bg-cover bg-center bg-gray-900" style={{
       backgroundImage: `url(${require("../../assets/backdrops/career.png")})`,
     }}>
-      <section className="relative container mx-auto text-center p-4 max-w-screen-xl bg-black bg-opacity-80">
+      <section className="relative container mx-auto text-center p-4 max-w-screen-xl bg-black bg-opacity-80 rounded-lg">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Careers - Join Our Esteemed Legal Team
         </h2>

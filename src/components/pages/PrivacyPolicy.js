@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
 				backgroundImage: `url(${require("../../assets/backdrops/privacy.png")})`,
 			}}
 		>
-			<section className="relative container mx-auto text-center p-4 max-w-screen-xl bg-black opacity-80">
+			<section className="relative container mx-auto text-center p-4 max-w-screen-xl bg-black opacity-80 rounded-lg">
 				<h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
 					Privacy Policy
 				</h2>

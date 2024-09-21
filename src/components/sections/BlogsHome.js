@@ -10,11 +10,14 @@ const BlogsHome = () => {
 	}, []);
 
 	return (
-		<main className="relative p-8 bg-gray-800 bg-fixed bg-cover bg-center min-h-[25vh]" style={{
+		<main
+			className="relative p-8 bg-gray-800 bg-fixed bg-cover bg-center min-h-[25vh]"
+			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/blogs.png")})`,
-			}}>
+			}}
+		>
 			<section className="relative container mx-auto text-center px-4 max-w-screen-xl ">
-				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6 p-3 bg-black bg-opacity-60">
+				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6 p-3 bg-black bg-opacity-80">
 					Our Blogs
 				</h2>
 				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -56,6 +59,7 @@ const BlogsHome = () => {
 				</Link>
 			</section>
 		</main>
-	);};
+	);
+};
 
 export default BlogsHome;

@@ -12,11 +12,11 @@ const AboutUsHome = () => {
 			<section className="relative container mx-auto max-w-screen-xl">
 				<div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4">
 					{/* Left Side - Image of a Lawyer */}
-					<div className="text-center md:text-left">
+					<div className="text-center md:text-left h-auto">
 						<img
 							src={require("../../assets/about/about_us.png")}
 							alt="Lawyer"
-							className="w-full h-auto object-cover rounded-lg shadow-md"
+							className="w-full h-auto object-cover rounded-lg shadow-md bg-white"
 						/>
 					</div>
 

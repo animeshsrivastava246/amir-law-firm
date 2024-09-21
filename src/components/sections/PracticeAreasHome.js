@@ -16,9 +16,8 @@ const PracticeAreasHome = () => {
 				backgroundImage: `url(${require("../../assets/backdrops/privacy.png")})`,
 			}}
 		>
-
 			<section className="relative container mx-auto text-center px-4 max-w-screen-xl">
-				<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12  p-3 bg-black bg-opacity-60">
+				<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12  p-3 bg-black bg-opacity-80">
 					Practice Areas
 				</h2>
 				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

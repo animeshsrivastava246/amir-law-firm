@@ -16,7 +16,7 @@ const PracticeAreas = () => {
 			}}
 		>
 			<div className="relative max-w-screen-xl mx-auto">
-				<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12 bg-black opacity-80 p-4">
+				<h2 className="text-5xl font-semibold text-center text-gray-100 mb-12 bg-black opacity-80 p-4 rounded-full">
 					Practice Areas
 				</h2>
 				<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

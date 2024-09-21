@@ -21,7 +21,7 @@ const Teams = () => {
 			}}
 		>
 			<div className="relative container mx-auto text-center px-4 max-w-screen-xl">
-				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6 p-3 bg-black bg-opacity-60">
+				<h2 className="text-4xl md:text-5xl font-bold text-white mb-6 p-3 bg-black bg-opacity-80">
 					Meet Our Team
 				</h2>
 				<Swiper

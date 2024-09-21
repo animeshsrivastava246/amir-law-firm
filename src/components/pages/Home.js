@@ -19,14 +19,6 @@ const Home = () => {
 		setCarousels(CarouselData);
 	}, []);
 
-	// Scroll function to move to the next section
-	const scrollToNextSection = () => {
-		const nextSection = document.querySelector("#about-us");
-		if (nextSection) {
-			nextSection.scrollIntoView({ behavior: "auto" });
-		}
-	};
-
 	return (
 		<main>
 			{/* Hero Section with Swiper Carousel */}
@@ -54,19 +46,6 @@ const Home = () => {
 								alt={`${carousel.description}`}
 								className="w-full h-full object-cover" // Use object-cover for better fitting
 							/>
-							{/* Description at bottom center */}
-							<div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-center bg-black bg-opacity-80 text-white py-4 rounded-lg w-[80%] md:w-[50%] lg:w-[30%]">
-								<p className="text-xl md:text-2xl font-semibold mb-2">
-									{`${carousel.description}`}
-								</p>
-								{/* Scroll button */}
-								<button
-									onClick={scrollToNextSection}
-									className="bg-indigo-600 text-white hover:bg-indigo-800 font-semibold py-2 px-6 rounded-full transition-all"
-								>
-									Scroll Down
-								</button>
-							</div>
 						</SwiperSlide>
 					))}
 					{/* Navigation Buttons */}
