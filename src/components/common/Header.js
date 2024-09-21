@@ -35,6 +35,41 @@ const Header = () => {
 				>
 					<div className="container mx-auto flex pr-2 justify-between items-center w-full max-w-screen-xl">
 						<Logo />
+=======
+  // State for toggling the mobile menu
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Toggle the mobile menu
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Determine if the current path matches the link's path
+  const getLinkClass = (path) =>
+    `text-gray-100 hover:bg-indigo-800 px-2 py-1 rounded-none transition-transform transform hover:scale-105 duration-300 ${
+      location.pathname === path
+        ? "border-b-2 text-indigo-400 border-indigo-400"
+        : ""
+    }`;
+
+  return (
+    <main className="sticky top-0 z-50">
+      {/* Fixed TopBar - Separate from header */}
+      <TopBar />
+      {/* Main Header */}
+      <header className="w-full border-b-[1px] border-indigo-700 border-opacity-70">
+        <nav
+          className="bg-gray-900 pt-1 pb-2 px-2 shadow-md"
+          style={{
+            display: "grid",
+            alignItems: "center",
+            justifyItems: "center",
+          }}
+        >
+          <div className="container mx-auto flex pr-2 justify-between items-center w-full max-w-screen-xl">
+            <Logo />
+>>>>>>> 92eaf2eba461458e0ec0a002ac18a43cabaac078
 
             {/* Hamburger Menu for small screens */}
             <div className="md:hidden">

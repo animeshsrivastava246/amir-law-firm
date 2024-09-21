@@ -55,6 +55,31 @@ const BlogsHome = () => {
 			</section>
 		</main>
 	);
+=======
+              <div className="relative z-10 px-2 pb-6 pt-2">
+                {/* Blog Title */}
+                <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                  {blog.title}
+                </h3>
+                {/* Blog Date */}
+                <p className="text-sm text-gray-500 mb-4">{blog.date}</p>
+                {/* Blog Excerpt */}
+                <p className="text-gray-700">{blog.excerpt}</p>
+              </div>
+            </article>
+          ))}
+        </section>
+        {/* Read More Button */}
+        <Link
+          to="/blogs"
+          className="inline-block bg-indigo-600 text-white mt-6 px-6 py-2 rounded-md hover:bg-indigo-700 transition"
+        >
+          Read More
+        </Link>
+      </section>
+    </main>
+  );
+>>>>>>> 92eaf2eba461458e0ec0a002ac18a43cabaac078
 };
 
 export default BlogsHome;
