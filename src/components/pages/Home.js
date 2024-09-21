@@ -48,8 +48,8 @@ const Home = () => {
             </SwiperSlide>
           ))}
           {/* Navigation Buttons */}
-          <div className="swiper-button-prev !text-white !bg-gray-800 !bg-opacity-40 p-4 rounded-full" />
-          <div className="swiper-button-next !text-white !bg-gray-800 !bg-opacity-40 p-4 rounded-full" />
+          <div className="swiper-button-prev !text-white !bg-gray-950 !bg-opacity-60 rounded-sm px-6 py-8 hover:!bg-opacity-95 transition-all" />
+          <div className="swiper-button-next !text-white !bg-gray-950 !bg-opacity-60 rounded-sm px-6 py-8 hover:!bg-opacity-95 transition-all" />
         </Swiper>
       </section>
 
@@ -84,7 +84,7 @@ const Home = () => {
       </section>
 
       {/* Google Map Embed */}
-      <section className="my-12">
+      <section className="mt-12 mb-0">
         <div className="relative w-full h-[35vh]">
           <iframe
             title="Office Location"
