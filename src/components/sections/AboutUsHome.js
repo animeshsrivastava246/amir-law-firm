@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AboutUsHome = () => {
 	return (
 		<main
-			className="relative p-8 bg-gray-800 min-h-[25vh]"
+			className="relative p-8 bg-gray-800 bg-fixed bg-cover bg-center min-h-[25vh]"
 			style={{
 				backgroundImage: `url(${require("../../assets/backdrops/about.png")})`,
 			}}
