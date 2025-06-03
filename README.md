@@ -109,10 +109,6 @@ This project follows a modular structure to maintain scalability and organizatio
 
 ---
 
-## Testing
-
-This project uses **Jest** for testing React components. You can run the test suite with:
-
 ```bash
 npm test
 ```
