@@ -35,7 +35,7 @@ Welcome to the Amir Law Firm website! This modern, React-based application highl
 
 Ensure you have the following installed on your local development environment:
 
-- **Node.js**: Version 14.x or later
+- **Node.js**: Version 18.x or later
 - **npm**: Version 6.x or later
 - **Git**: For version control and repository management
 
