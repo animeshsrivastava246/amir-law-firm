@@ -48,7 +48,7 @@ To set up and run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/amir-law-firm.git
+   git clone https://github.com/animeshsrivastava246/amir-law-firm.git
    cd amir-law-firm
    ```
 ````
